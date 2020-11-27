@@ -1,0 +1,35 @@
+- date: May 2022
+  description: I have defended and have joined Google as a research scientist.
+
+- date: Oct 2021
+  description: >-
+    [_FiG-NeRF_](https://fig-nerf.github.io) has been accepted to 3DV 2021.
+
+- date: Sep 2021
+  description: >-
+    [_HyperNeRF_](https://hypernerf.github.io) has been accepted to SIGGRAPH Asia
+    2021. We have also released the [code](https://github.com/google/hypernerf).
+
+- date: Jul 2021
+  description: >-
+    [_Nerfies_](https://nerfies.github.io) has been accepted to ICCV 2021 as an oral
+    presentation.
+
+- date: Jun 2021
+  description: >-
+    We present [_HyperNeRF_](https://hypernerf.github.io), which uses ideas
+    from level set methods to model topologically changing scenes.
+
+- date: Nov 2020
+  description: >-
+    We present [_Nerfies_](https://nerfies.github.io), a way to turn
+    casually captured selfie videos into free-viewpoint visualizations.
+- date: Jun 2020
+  description: >-
+    We've released the
+    [code](https://github.com/NVlabs/latentfusion) and
+    [data](https://latentfusion.github.io) for [_LatentFusion_](https://latentfusion.github.io).
+- date: Feb 2020
+  description: >-
+    [_LatentFusion_](https://latentfusion.github.io), our paper on zero-shot pose estimation,
+    has been accepted to CVPR 2020.

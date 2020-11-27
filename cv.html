@@ -1,0 +1,140 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>{{ site.title }}</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="./css/fontawesome.all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+  <link href="./css/bulma.min.css" rel="stylesheet">
+  <link href="./css/cv.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="./js/fontawesome.all.min.js"></script>
+</head>
+
+<body>
+
+  <section>
+    <div class="container is-max-desktop">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <h1 class="title is-2">{{ site.name }}</h1>
+          <h1 class="subtitle is-5">{{ site.position }}</h1>
+        </div>
+        <div class="column is-narrow portrait-column">
+          <img class="portrait-image" src="./images/portrait.jpg" alt="A portrait of Keunhong Park" />
+        </div>
+        <div class="column has-text-right">
+          <p>
+            <a href="{{ site.url }}">
+              <i class="fas fa-home"></i>
+              {% assign url_parts = site.url | split: "//" %}
+              {{ url_parts[1] }}
+            </a>
+          </p>
+          <p>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fab fa-github"></i>
+              {{ site.github_username }}
+            </a>
+          </p>
+          <p>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fab fa-twitter"></i>
+              {{ site.twitter_username }}
+            </a>
+          </p>
+          <p>
+            <a href="mailto:{{ site.email }}">
+              <i class="fas fa-envelope"></i>
+              {{ site.email }}
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <h2>Education</h2>
+        {% for school in site.data.education %}
+        <div class="columns">
+          <div class="column is-four-fifths">
+            <b>{{ school.name }}</b><br />
+            {{ school.description }}
+          </div>
+          <div class="column is-one-fifths has-text-right">
+            {{ school.dates }}
+          </div>
+        </div>
+        {% endfor %}
+
+        <h2>Employment</h2>
+
+        {% for job in site.data.employment %}
+        <div class="columns">
+          <div class="column is-four-fifths">
+            <b>{{ job.company }}</b><br />
+            {{ job.description }}
+          </div>
+          <div class="column is-one-fifths has-text-right">
+            {{ job.dates }}
+            <br />
+            {{ job.location }}
+          </div>
+        </div>
+        {% endfor %}
+
+        <h2>Publications</h2>
+
+        {% for publication in site.data.publications %}
+        <div class="columns">
+          <div class="column is-four-fifths">
+            <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
+            <div class="publication-authors">
+              {% for author_id in publication.authors %}
+              {% assign author = site.data.authors[author_id] %}
+              <span class="author-block {% if author.is_me %}author-me{% endif %}">
+                {% if author.is_me %}
+                {{ author.first_name | slice: 0 }}. {{ author.last_name }}{% if forloop.last == false %},{%
+                endif %}
+                {% else %}
+                <a href="{{ author.website }}">{{ author.first_name | slice: 0 }}. {{ author.last_name }}</a>{% if
+                forloop.last == false %},{% endif %}
+                {% endif %}
+              </span>
+              {% endfor %}
+            </div>
+            {{ publication.description }}
+          </div>
+          <div class="column is-one-fifths has-text-right">
+            {{ publication.venue }}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
