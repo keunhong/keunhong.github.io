@@ -56,11 +56,14 @@
 
 .publication-mousecell img, .publication-mousecell video {
     border-radius: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .publication-mousecell {
     width: 100%;
     height: 100%;
+    display: inline-block;
     overflow: hidden;
 }
 
