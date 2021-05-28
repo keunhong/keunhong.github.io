@@ -8,11 +8,15 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MFWSBLRKG0"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-MFWSBLRKG0');
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-MFWSBLRKG0');
   </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -30,32 +34,30 @@
 
 
 <section class="hero">
-  <div class="hero-body">
-    <div class="columns is-centered">
-      <div class="column is-two-thirds">
-        <div class="columns is-vcentered">
-          <div class="column is-4">
-            <p class="image is-square">
-              <img class="is-rounded" src="./static/images/portrait.jpg">
-            </p>
-          </div>
-          <div class="column">
-            <h1 class="title">
-              <b>Hello, I'm Keunhong Park</b>
-            </h1>
-            <div class="content has-text-justified">
-              <p>
-                I am a Ph. D student at the University of Washington with
-                <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a> and
-                <a href="https://homes.cs.washington.edu/~seitz/">Steve Seitz</a>.
-              </p>
-              <p>
-                I work at the intersection of computer vision and computer graphics. I have worked on automatically
-                translating 2D representations (images) into more dynamic representations (geometry and appearance).
-                I am currently exploring ways to leverage multi-modal data for scene understanding.
-              </p>
-            </div>
-          </div>
+  <div class="hero-body container is-max-desktop">
+    <div class="columns is-mobile is-vcentered">
+      <div class="column is-4">
+        <p class="image is-square">
+          <img class="is-rounded" src="./static/images/portrait.jpg">
+        </p>
+      </div>
+      <div class="column">
+        <h1 class="title">
+          <b>Hello, I'm Keunhong Park</b>
+        </h1>
+        <div class="content has-text-justified">
+          <p>
+            I am a Ph. D student at the University of Washington with
+            <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a> and
+            <a href="https://homes.cs.washington.edu/~seitz/">Steve Seitz</a>.
+          </p>
+          <p>
+            I work at the intersection of computer vision and computer graphics, and like everyone else, I like applying
+            machine learning to interesting 3D vision and graphics problems.
+          </p>
+          <p>
+            I am currently working on making high-quality 3D capturing technologies available to everyone.
+          </p>
         </div>
       </div>
     </div>
@@ -70,60 +72,56 @@
 </div>
 
 <section class="section">
-  <div class="columns is-centered">
-    <div class="column is-two-thirds">
-      <h2 class="title is-3">News</h2>
-      <div class="content">
-        <ul>
-          <li>
-            <b>November 2020</b>: We present <a href="https://nerfies.github.io"><i>Nerfies</i></a>, a way to turn
-                                casually captured selfie videos into free-viewpoint visualizations!
-          </li>
-          <li>
-            <b>June 2020</b>: We've released the
-            <a href="https://github.com/NVlabs/latentfusion">code</a> and
-            <a href="https://latentfusion.github.io">data</a> for
-            <a href="https://latentfusion.github.io">LatentFusion</a>. We will be presenting at CVPR 2020--see you
-                            there!
-          </li>
-          <li>
-            <b>February 2020</b>: Our <a href="https://latentfusion.github.io">paper</a> on zero-shot pose estimation
-                                has been accepted to CVPR 2020.
-          </li>
-        </ul>
-      </div>
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3">News</h2>
+    <div class="content">
+      <ul>
+        <li>
+          <b>November 2020</b>: We present <a href="https://nerfies.github.io"><i>Nerfies</i></a>, a way to turn
+                              casually captured selfie videos into free-viewpoint visualizations!
+        </li>
+        <li>
+          <b>June 2020</b>: We've released the
+          <a href="https://github.com/NVlabs/latentfusion">code</a> and
+          <a href="https://latentfusion.github.io">data</a> for
+          <a href="https://latentfusion.github.io">LatentFusion</a>. We will be presenting at CVPR 2020--see you
+                          there!
+        </li>
+        <li>
+          <b>February 2020</b>: Our <a href="https://latentfusion.github.io">paper</a> on zero-shot pose estimation
+                              has been accepted to CVPR 2020.
+        </li>
+      </ul>
     </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="columns is-centered">
-    <div class="column is-two-thirds">
-      <h2 class="title is-3">Publications</h2>
+    <h2 class="title is-3">Publications</h2>
 
-      <!-- FiG-NeRF. -->
-      <div class="columns is-vcentered">
-        <div class="column is-3">
-          <div class="publication-mousecell" id="fignerf-image">
-            <video class="is-rounded" width="100%" height="100%" muted autoplay loop>
-              <source src="./static/images/fignerf_after.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <img class="is-rounded" src="./static/images/fignerf_before.jpg" alt="FiG-NeRF" />
-          </div>
+    <!-- FiG-NeRF. -->
+    <div class="columns is-vcentered">
+      <div class="column is-2">
+        <div class="publication-mousecell" id="fignerf-image">
+          <video autoplay class="is-rounded" height="100%" loop muted width="100%">
+            <source src="./static/images/fignerf_after.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <img alt="FiG-NeRF" class="is-rounded" src="./static/images/fignerf_before.jpg"/>
         </div>
-        <div class="column">
-          <div class="content">
-            <h3 class="publication-title"><a href="https://fig-nerf.github.io">FiG-NeRF: Figure Ground Neural Radiance Fields for 3D Object Category Modelling</a></h3>
-            <p class="publication-venue">arXiv, 2021</p>
-            <div class="publication-authors">
-              <span class="author-block"><a href="https://chrisdxie.github.io/">Christopher Xie</a></span>,
-              <span class="author-block"><b>Keunhong Park</b></span>,
-              <span class="author-block"><a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a></span>,
-              <span class="author-block"><a href="http://matthewalunbrown.com/">Matthew Brown</a></span>
-            </div>
-            <!-- Publication Links. -->
-            <div class="publication-links">
+      </div>
+      <div class="column">
+        <div class="content">
+          <h3 class="publication-title"><a href="https://fig-nerf.github.io">FiG-NeRF: Figure Ground Neural Radiance
+                                                                             Fields for 3D Object Category Modelling</a>
+          </h3>
+          <div class="publication-venue">arXiv, 2021</div>
+          <div class="publication-authors">
+            <span class="author-block"><a href="https://chrisdxie.github.io/">Christopher Xie</a></span>,
+            <span class="author-block"><b>Keunhong Park</b></span>,
+            <span class="author-block"><a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a></span>,
+            <span class="author-block"><a href="http://matthewalunbrown.com/">Matthew Brown</a></span>
+          </div>
+          <!-- Publication Links. -->
+          <div class="publication-links">
               <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link"
                    href="https://fig-nerf.github.io">
@@ -131,52 +129,53 @@
                   <span>Project Page</span>
                 </a>
               </span>
-              <span class="link-block link-block-">
+            <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link"
                    href="https://arxiv.org/pdf/2104.08418.pdf">
                   <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>PDF</span>
                 </a>
               </span>
-              <span class="link-block link-block-">
+            <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link" href="https://arxiv.org/abs/2104.08418">
                   <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
-            </div>
-            <!--/ Publication Links. -->
           </div>
+          <!--/ Publication Links. -->
         </div>
       </div>
-      <!--/ FiG-NeRF. -->
+    </div>
+    <!--/ FiG-NeRF. -->
 
-      <!-- Nerfies. -->
-      <div class="columns is-vcentered">
-        <div class="column is-3">
-          <div class="publication-mousecell" id="nerfie-image">
-            <video class="is-rounded" width="100%" height="100%" muted autoplay loop>
-              <source src="./static/images/nerfie_after.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <img class="is-rounded" src="./static/images/nerfie_before.jpg" alt="Nerfies!" />
-          </div>
+    <!-- Nerfies. -->
+    <div class="columns is-vcentered">
+      <div class="column is-2">
+        <div class="publication-mousecell" id="nerfie-image">
+          <video autoplay class="is-rounded" height="100%" loop muted width="100%">
+            <source src="./static/images/nerfie_after.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <img alt="Nerfies!" class="is-rounded" src="./static/images/nerfie_before.jpg"/>
         </div>
-        <div class="column">
-          <div class="content">
-            <h3 class="publication-title"><a href="https://nerfies.github.io">Nerfies: Deformable Neural Radiance Fields</a></h3>
-            <p class="publication-venue">arXiv, 2020</p>
-            <div class="publication-authors">
-              <span class="author-block"><b>Keunhong Park</b></span>,
-              <span class="author-block"><a href="https://utkarshsinha.com">Utkarsh Sinha</a></span>,
-              <span class="author-block"><a href="https://jonbarron.info">Jonathan T. Barron</a></span>,
-              <span class="author-block"><a href="http://sofienbouaziz.com">Sofien Bouaziz</a></span>,
-              <span class="author-block"><a href="https://www.danbgoldman.com">Dan B Goldman</a></span>,
-              <span class="author-block"><a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a></span>,
-              <span class="author-block"><a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a></span>
-            </div>
-            <!-- Publication Links. -->
-            <div class="publication-links">
+      </div>
+      <div class="column">
+        <div class="content">
+          <h3 class="publication-title"><a href="https://nerfies.github.io">Nerfies: Deformable Neural Radiance
+                                                                            Fields</a></h3>
+          <div class="publication-venue">arXiv, 2020</div>
+          <div class="publication-authors">
+            <span class="author-block"><b>Keunhong Park</b></span>,
+            <span class="author-block"><a href="https://utkarshsinha.com">Utkarsh Sinha</a></span>,
+            <span class="author-block"><a href="https://jonbarron.info">Jonathan T. Barron</a></span>,
+            <span class="author-block"><a href="http://sofienbouaziz.com">Sofien Bouaziz</a></span>,
+            <span class="author-block"><a href="https://www.danbgoldman.com">Dan B Goldman</a></span>,
+            <span class="author-block"><a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a></span>,
+            <span class="author-block"><a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a></span>
+          </div>
+          <!-- Publication Links. -->
+          <div class="publication-links">
               <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link"
                    href="https://nerfies.github.io">
@@ -184,48 +183,50 @@
                   <span>Project Page</span>
                 </a>
               </span>
-              <span class="link-block link-block-">
+            <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link"
                    href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
                   <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>PDF</span>
                 </a>
               </span>
-              <span class="link-block link-block-">
+            <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link" href="https://arxiv.org/abs/2011.12948">
                   <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
-            </div>
-            <!--/ Publication Links. -->
           </div>
+          <!--/ Publication Links. -->
         </div>
       </div>
-      <!--/ Nerfies. -->
+    </div>
+    <!--/ Nerfies. -->
 
-      <!-- LatentFusion. -->
-      <div class="columns is-vcentered">
-        <div class="column is-3">
-          <p class="image is-square">
-            <img class="is-rounded" src="./static/images/latentfusion.jpg">
-          </p>
-        </div>
-        <div class="column">
-          <div class="content">
-            <h3 class="publication-title"><a href="https://latentfusion.github.io">LatentFusion: End-to-End Differentiable Reconstruction and Rendering
-                                                    for Unseen Object Pose Estimation</a></h3>
-            <p class="publication-venue">CVPR, 2020</p>
-            <div class="publication-authors">
-              <span class="author-block author-block-"><b>Keunhong Park</b></span>,
-              <span class="author-block author-block-"><a
-                  href="https://cs.gmu.edu/~amousavi/">Arsalan Mousavian</a></span>,
-              <span class="author-block author-block-"><a href="https://yuxng.github.io/">Yu Xiang</a></span>,
-              <span class="author-block author-block-"><a
-                  href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a></span>
-            </div>
-            <!-- Publication Links. -->
-            <div class="publication-links">
+    <!-- LatentFusion. -->
+    <div class="columns is-vcentered">
+      <div class="column is-2">
+        <p class="image is-square">
+          <img class="is-rounded" src="./static/images/latentfusion.jpg">
+        </p>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h3 class="publication-title"><a href="https://latentfusion.github.io">LatentFusion: End-to-End Differentiable
+                                                                                 Reconstruction and Rendering
+                                                                                 for Unseen Object Pose Estimation</a>
+          </h3>
+          <div class="publication-venue">CVPR, 2020</div>
+          <div class="publication-authors">
+            <span class="author-block author-block-"><b>Keunhong Park</b></span>,
+            <span class="author-block author-block-"><a
+                href="https://cs.gmu.edu/~amousavi/">Arsalan Mousavian</a></span>,
+            <span class="author-block author-block-"><a href="https://yuxng.github.io/">Yu Xiang</a></span>,
+            <span class="author-block author-block-"><a
+                href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a></span>
+          </div>
+          <!-- Publication Links. -->
+          <div class="publication-links">
               <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link"
                    href="https://latentfusion.github.io">
@@ -233,54 +234,55 @@
                   <span>Project Page</span>
                 </a>
               </span>
-              <span class="link-block link-block-">
+            <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link" href="https://arxiv.org/pdf/1912.00416.pdf">
                   <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>PDF</span>
                 </a>
               </span>
-              <span class="link-block link-block-">
+            <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link" href="https://arxiv.org/abs/1912.00416">
                   <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <span class="link-block link-block-">
+            <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link"
                    href="https://github.com/NVlabs/latentfusion">
                   <span class="icon"><i class="fas fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
-            </div>
-            <!--/ Publication Links. -->
           </div>
+          <!--/ Publication Links. -->
         </div>
       </div>
-      <!--/ LatentFusion. -->
+    </div>
+    <!--/ LatentFusion. -->
 
-      <!-- PhotoShape. -->
-      <div class="columns is-vcentered">
-        <div class="column is-3">
-          <p class="image is-square">
-            <img class="is-rounded" src="./static/images/photoshape.jpg">
-          </p>
-        </div>
-        <div class="column">
-          <div class="content">
-            <h3 class="publication-title"><a href="https://photoshape.github.io">PhotoShape: Photorealistic Materials for Large-Scale Shape
-                                                    Collections</a></h3>
-            <p class="publication-venue">SIGGRAPH Asia, 2018</p>
-            <div class="publication-authors">
-              <span class="author-block author-block-"><b>Keunhong Park</b></span>,
-              <span class="author-block author-block-"><a href="https://homes.cs.washington.edu/~krematas/">Konstantinos Rematas</a></span>,
-              <span class="author-block author-block-"><a
-                  href="https://homes.cs.washington.edu/~ali">Ali Farhadi</a></span>,
-              <span class="author-block author-block-"><a
-                  href="https://homes.cs.washington.edu/~seitz/">Steve Seitz</a></span>
-            </div>
-            <!-- Publication Links. -->
-            <div class="publication-links">
+    <!-- PhotoShape. -->
+    <div class="columns is-vcentered">
+      <div class="column is-2">
+        <p class="image is-square">
+          <img class="is-rounded" src="./static/images/photoshape.jpg">
+        </p>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h3 class="publication-title"><a href="https://photoshape.github.io">PhotoShape: Photorealistic Materials for
+                                                                               Large-Scale Shape
+                                                                               Collections</a></h3>
+          <div class="publication-venue">SIGGRAPH Asia, 2018</div>
+          <div class="publication-authors">
+            <span class="author-block author-block-"><b>Keunhong Park</b></span>,
+            <span class="author-block author-block-"><a href="https://homes.cs.washington.edu/~krematas/">Konstantinos Rematas</a></span>,
+            <span class="author-block author-block-"><a
+                href="https://homes.cs.washington.edu/~ali">Ali Farhadi</a></span>,
+            <span class="author-block author-block-"><a
+                href="https://homes.cs.washington.edu/~seitz/">Steve Seitz</a></span>
+          </div>
+          <!-- Publication Links. -->
+          <div class="publication-links">
               <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link"
                    href="https://photoshape.github.io">
@@ -288,38 +290,36 @@
                   <span>Project Page</span>
                 </a>
               </span>
-              <span class="link-block link-block-">
+            <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link"
                    href="https://homes.cs.washington.edu/~kpar/publications/photoshape_lowres.pdf">
                   <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>PDF (8.6 MB)</span>
                 </a>
               </span>
-              <span class="link-block link-block-">
+            <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link"
                    href="https://arxiv.org/abs/1809.09761">
                   <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <span class="link-block link-block-">
+            <span class="link-block link-block-">
                 <a class="external-link button is-small is-rounded is-link"
                    href="https://github.com/keunhong/photoshape">
                   <span class="icon"><i class="fas fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
-            </div>
-            <!--/ Publication Links. -->
           </div>
+          <!--/ Publication Links. -->
         </div>
       </div>
-      <!--/ PhotoShape. -->
-
     </div>
+    <!--/ PhotoShape. -->
+
   </div>
 </section>
-
 
 
 <footer class="footer">
@@ -328,10 +328,11 @@
       <a href="mailto:46Aik2sugTKFHX92@keunhong.com">
         <i class="fas fa-envelope"></i>
       </a>
-      <a href="https://github.com/keunhong" class="external-link">
+      <a class="external-link" href="https://github.com/keunhong">
         <i class="fab fa-github"></i>
       </a>
-      <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6ma662dZahhSxXWh4usLcc9Y_4mLjlVZIydlL0F9lJgXde_tlP9Cws3dnoyrqppSz81tUGCG-RqawbVWHuOyy9PdPm3iZuxDLbCuYMem8YLzTQ1VA&user=HVZb-5oAAAAJ" class="external-link">
+      <a class="external-link"
+         href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6ma662dZahhSxXWh4usLcc9Y_4mLjlVZIydlL0F9lJgXde_tlP9Cws3dnoyrqppSz81tUGCG-RqawbVWHuOyy9PdPm3iZuxDLbCuYMem8YLzTQ1VA&user=HVZb-5oAAAAJ">
         <i class="ai ai-google-scholar"></i>
       </a>
     </div>
