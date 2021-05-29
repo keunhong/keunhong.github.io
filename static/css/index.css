@@ -5,11 +5,7 @@
 }
 
 .publication-block {
-}
-
-.publication-title {
-    margin: 0 !important;
-    font-size: 20px !important;
+    padding-bottom: 1em;
 }
 
 .publication-banner {
@@ -25,13 +21,16 @@
     color: #000;
     width: fit-content;
     font-family: 'Google Sans', serif;
-    margin-bottom: 0 !important;
+    margin: 0 !important;
+    font-weight: bold;
+    font-size: 18px !important;
 }
 
 .publication-venue {
     color: #555;
     width: fit-content;
     margin-top: 0;
+    font-style: italic;
 }
 
 .publication-awards {
@@ -80,8 +79,14 @@
   /*color: #4286f4;*/
 }
 
+.publication-description {
+    color: #333;
+    margin: 0.5em 0;
+}
+
 .publication-links {
-    margin-top: 0.5em;
+    margin: 0 !important;
+    margin-top: 0.5em !important;
 }
 
 .publication-video {
