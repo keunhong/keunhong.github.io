@@ -4,8 +4,11 @@
     color: #000;
 }
 
+.publication-block {
+}
+
 .publication-title {
-    margin: 10px 0 10px 0 !important;
+    margin: 0 !important;
     font-size: 20px !important;
 }
 
@@ -50,6 +53,7 @@
 
 .publication-mousecell {
     position: relative;
+    font-size: 0;
 }
 
 .publication-mousecell video {
