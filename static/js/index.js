@@ -17,4 +17,13 @@ $(document).ready(function() {
         $('#fignerf-image video').css('display', 'none');
         $('#fignerf-image img').css('display', 'inline-block');
     });
+
+    $('#hypernerf-image').mouseover(function() {
+        $('#hypernerf-image video').css('display', 'inline-block');
+        $('#hypernerf-image img').css('display', 'none');
+    });
+    $('#hypernerf-image').mouseout(function() {
+        $('#hypernerf-image video').css('display', 'none');
+        $('#hypernerf-image img').css('display', 'inline-block');
+    });
 })
