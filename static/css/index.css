@@ -33,6 +33,12 @@
     font-style: italic;
 }
 
+.publication-venue-emph {
+    font-weight: 600;
+    font-style: normal;
+    color: #e63946;
+}
+
 .publication-awards {
     color: #ff3860;
     width: fit-content;
@@ -109,3 +115,4 @@
 
 .publication-body img {
 }
+
