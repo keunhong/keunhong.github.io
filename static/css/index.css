@@ -1,4 +1,18 @@
 
+.portrait-column {
+    flex: none;
+    width: 30%;
+}
+
+.portrait {
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.portrait img {
+    transform: scale(1.2);
+}
+
 .footer a {
     font-size: 25px;
     color: #000;
