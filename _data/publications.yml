@@ -30,8 +30,6 @@
     - keunhong
     - rmbrualla
     - mtbr
-  awards:
-    - "Oral Presentation"
 
 - id: nerfies
   title: "Nerfies: Deformable Neural Radiance Fields"
@@ -50,6 +48,8 @@
     - dgo
     - smseitz
     - rmbrualla
+  awards:
+    - "Oral Presentation"
 
 - id: latentfusion
   title: "LatentFusion: End-to-End Differentiable Reconstruction and Rendering for Unseen Object Pose Estimation "
