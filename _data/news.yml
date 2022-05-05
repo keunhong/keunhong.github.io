@@ -1,0 +1,24 @@
+- >-
+  <b>2021-10-03</b>: <a href="https://fig-nerf.github.io"><i>Fig-NeRF</i></a> has been accepted to 3DV 2021.
+- >-
+  <b>2021-09-10</b>: <a href="https://hypernerf.github.io"><i>HyperNeRF</i></a> has been accepted to SIGGRAPH Asia
+                  2021. We have also released the <a href="https://github.com/google/hypernerf">code</a>.
+- >-
+  <b>2021-07-22</b>: <a href="https://nerfies.github.io"><i>Nerfies</i></a> has been accepted to ICCV 2021 as an oral
+                  presentation.
+- >-
+  <b>2021-06-24</b>: We present <a href="https://hypernerf.github.io"><i>HyperNeRF</i></a>, which uses ideas
+                  from
+                  level set methods to model topologically changing scenes.
+- >-
+  <b>2020-11-25</b>: We present <a href="https://nerfies.github.io"><i>Nerfies</i></a>, a way to turn
+                  casually captured selfie videos into free-viewpoint visualizations.
+- >-
+  <b>2020-06-09</b>: We've released the
+  <a href="https://github.com/NVlabs/latentfusion">code</a> and
+  <a href="https://latentfusion.github.io">data</a> for
+  <a href="https://latentfusion.github.io"><i>LatentFusion</i></a>.
+- >-
+  <b>2020-02-26</b>: <a href="https://latentfusion.github.io"><i>LatentFusion</i></a>,
+                    our <a href="https://latentfusion.github.io">paper</a> on zero-shot pose estimation,
+                    has been accepted to CVPR 2020.

@@ -1,0 +1,65 @@
+keunhong:
+  first_name: Keunhong
+  last_name: Park
+  website: https://keunhong.com
+  is_me: true
+rmbrualla:
+  first_name: Ricardo
+  last_name: Martin-Brualla
+  website: https://ricardomartinbrualla.com
+smseitz:
+  first_name: Steven 
+  middle_name: M.
+  last_name: Seitz
+  website: https://smseitz.com
+ali:
+  first_name: Ali
+  last_name: Farhadi
+  website: https://homes.cs.washington.edu/~ali/
+krematas:
+  first_name: Kostas
+  last_name: Rematas
+  website: https://krematas.com
+barron:
+  first_name: Jonathan
+  middle_name: T.
+  last_name: Barron
+  website: https://jonbarron.info
+sofien:
+  first_name: Sofien
+  last_name: Bouaziz
+  website: http://sofienbouaziz.com/
+utsinh:
+  first_name: Utkarsh
+  last_name: Sinha
+  website: https://utkarshsinha.com/
+dgo:
+  first_name: Dan
+  middle_name: B
+  last_name: Goldman
+  website: https://www.danbgoldman.com/home/
+amousavian:
+  first_name: Arsalan
+  last_name: Mousavian
+  website: https://cs.gmu.edu/~amousavi/
+yux:
+  first_name: Yu
+  last_name: Xiang
+  website: https://yuxng.github.io/
+fox:
+  first_tname: Dieter
+  last_name: Fox
+  website: https://homes.cs.washington.edu/~fox/
+chrisxie:
+  first_name: Christopher
+  last_name: Xie
+  website: https://chrisdxie.github.io/
+mtbr:
+  first_name: Matthew
+  middle_name: A.
+  last_name: Brown
+  website: http://matthewalunbrown.com/
+hedman:
+  first_name: Peter
+  last_name: Hedman
+  website: https://phogzone.com

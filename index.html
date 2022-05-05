@@ -1,419 +1,191 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>Keunhong Park</title>
+  <title>{{ site.name }}</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MFWSBLRKG0"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
-      window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
-          dataLayer.push(arguments);
-      }
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-      gtag('js', new Date());
+    gtag('js', new Date());
 
-      gtag('config', 'G-MFWSBLRKG0');
+    gtag('config', '{{ site.google_analytics }}');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-  <link href="./static/css/fontawesome.all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="./css/fontawesome.all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
-  <link href="./static/css/bulma.min.css" rel="stylesheet">
-  <link href="./static/css/index.css" rel="stylesheet">
+  <link href="./css/bulma.min.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="./js/fontawesome.all.min.js"></script>
+  <script src="./js/index.js"></script>
 </head>
+
 <body>
 
-<section class="hero">
-  <div class="hero-body container is-max-desktop">
-    <div class="columns is-vcentered">
-      <div class="column portrait-column">
-        <p class="image is-square portrait">
-          <img src="./static/images/portrait.jpg">
-        </p>
-      </div>
-      <div class="column">
-        <h1 class="title">
-          <b>Hello, I'm Keunhong Park</b>
-        </h1>
-        <div class="content has-text-justified">
-          <p>I am a research scientist at Google, where I work on computer vision, graphics, and machine learning.</p>
-          <p>
-            Previously, I was a Ph. D student at the University of Washington advised by
-            <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a> and
-            <a href="https://homes.cs.washington.edu/~seitz/">Steve Seitz</a>.
+  <section class="hero">
+    <div class="hero-body container is-max-desktop">
+      <div class="columns is-vcentered">
+        <div class="column portrait-column">
+          <p class="image is-square portrait">
+            <img src="./images/portrait.jpg">
           </p>
+        </div>
+        <div class="column">
+          <h1 class="title">
+            <b>Hello, I'm {{ site.name }}</b>
+          </h1>
+          <div class="content has-text-justified">
+            {{ site.description }}
 
-          <div class="buttons">
-            <a class="external-link button" href="cv.html">
-              <span class="icon"><i class="fas fa-file"></i></span>
-              <span>CV</span>
-            </a>
+            <div class="buttons">
+              <a class="external-link button is-light" href="cv.html">
+                <span class="icon"><i class="fas fa-file"></i></span>
+                <span>CV</span>
+              </a>
 
-            <a class="external-link button"
-               href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6ma662dZahhSxXWh4usLcc9Y_4mLjlVZIydlL0F9lJgXde_tlP9Cws3dnoyrqppSz81tUGCG-RqawbVWHuOyy9PdPm3iZuxDLbCuYMem8YLzTQ1VA&user=HVZb-5oAAAAJ">
-              <span class="icon"><i class="ai ai-google-scholar"></i></span>
-              <span>Scholar</span>
-            </a>
+              <a class="external-link button is-light"
+                href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
+                <span class="icon"><i class="ai ai-google-scholar"></i></span>
+                <span>Scholar</span>
+              </a>
 
-            <a class="external-link button" href="https://github.com/keunhong">
-              <span class="icon"><i class="fab fa-github"></i></span>
-              <span>Github</span>
-            </a>
+              <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Github</span>
+              </a>
 
-            <a class="external-link button" href="https://twitter.com/KeunhongP">
-              <span class="icon"><i class="fab fa-twitter"></i></span>
-              <span>Twitter</span>
-            </a>
+              <a class="external-link button is-light" href="https://twitter.com/{{ site.twitter_username }}">
+                <span class="icon"><i class="fab fa-twitter"></i></span>
+                <span>Twitter</span>
+              </a>
+            </div>
+
           </div>
-
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- News. -->
+  <div class="hr">
+    <div class="container">
+      <hr>
     </div>
   </div>
-</section>
 
-<!-- News. -->
-<div class="hr">
-  <div class="container">
-    <hr>
-  </div>
-</div>
+  <section class="section">
+    <div class="container is-max-desktop">
 
-<section class="section">
-  <div class="container is-max-desktop">
+      <h2 class="title is-3">News</h2>
+      <div class="content">
+        <ul>
+          {% for news_item in site.data.news %}
+          <li>
+            {{ news_item }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
 
-    <h2 class="title is-3">News</h2>
-    <div class="content">
-      <ul>
-        <li>
-          <b>2021-10-03</b>: <a href="https://fig-nerf.github.io"><i>Fig-NeRF</i></a> has been accepted to 3DV 2021.
-        </li>
-        <li>
-          <b>2021-09-10</b>: <a href="https://hypernerf.github.io"><i>HyperNeRF</i></a> has been accepted to SIGGRAPH Asia
-                           2021. We have also released the <a href="https://github.com/google/hypernerf">code</a>.
-        </li>
-        <li>
-          <b>2021-07-22</b>: <a href="https://nerfies.github.io"><i>Nerfies</i></a> has been accepted to ICCV 2021 as an oral
-                           presentation.
-        </li>
-        <li>
-          <b>2021-06-24</b>: We present <a href="https://hypernerf.github.io"><i>HyperNeRF</i></a>, which uses ideas
-                           from
-                           level set methods to model topologically changing scenes.
-        </li>
-        <li>
-          <b>2020-11-25</b>: We present <a href="https://nerfies.github.io"><i>Nerfies</i></a>, a way to turn
-                           casually captured selfie videos into free-viewpoint visualizations.
-        </li>
-        <li>
-          <b>2020-06-09</b>: We've released the
-          <a href="https://github.com/NVlabs/latentfusion">code</a> and
-          <a href="https://latentfusion.github.io">data</a> for
-          <a href="https://latentfusion.github.io"><i>LatentFusion</i></a>.
-        </li>
-        <li>
-          <b>2020-02-26</b>: <a href="https://latentfusion.github.io"><i>LatentFusion</i></a>,
-                           our <a href="https://latentfusion.github.io">paper</a> on zero-shot pose estimation,
-                           has been accepted to CVPR 2020.
-        </li>
-      </ul>
-    </div>
+      <h2 class="title is-3">Publications</h2>
 
-    <h2 class="title is-3">Publications</h2>
-
-    <!-- HyperNeRF. -->
-    <div class="publication-block columns is-vcentered">
-      <div class="column is-2">
-        <div class="publication-image publication-mousecell" id="hypernerf-image">
-          <video autoplay class="" height="100%" loop muted width="100%">
-            <source src="./static/images/hypernerf_after.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <img alt="HyperNeRF" class="" src="./static/images/hypernerf_before.jpg"/>
+      {% for publication in site.data.publications %}
+      <div class="publication-block columns is-vcentered">
+        <div class="column is-2">
+          <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
+            {% if publication.image_mouseover contains "mp4" %}
+            <video autoplay class="" height="100%" loop muted width="100%">
+              <source src="./images/{{ publication.image_mouseover }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            {% endif %}
+            <img alt="{{ publication.title }}" class="" src="./images/{{ publication.image }}" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
+            <div class="publication-venue">
+              {{ publication.venue }}
+              {% for award in publication.awards %}
+              <span class="publication-venue-emph">({{ award }})<span>
+                  {% endfor %}
+            </div>
+            <div class="publication-authors">
+              {% for author_id in publication.authors %}
+              {% assign author = site.data.authors[author_id] %}
+              <span class="author-block {% if author.is_me %}author-me{% endif %}">
+                {% if author.is_me %}
+                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
+                endif %}
+                {% else %}
+                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
+                  }}</a>{% if forloop.last == false %},{% endif %}
+                {% endif %}
+              </span>
+              {% endfor %}
+            </div>
+            <p class="publication-description">{{ publication.description }}</p>
+            <!-- Publication Links. -->
+            <div class="publication-links buttons">
+              <a class="external-link button is-small is-dark" href="{{ publication.project_page }}">
+                <span class="icon"><i class="fas fa-globe-asia"></i></span>
+                <span>Project Page</span>
+              </a>
+              <a class="external-link button is-small" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>PDF</span>
+              </a>
+              <a class="external-link button is-small" href="https://arxiv.org/abs/{{ publication.arxiv }}">
+                <span class="icon"><i class="ai ai-arxiv"></i></span>
+                <span>arXiv</span>
+              </a>
+              {% if publication.github %}
+              <a class="external-link button is-small" href="https://github.com/{{ publication.github }}">
+                <span class="icon"><i class="fa fab fa-github"></i></span>
+                <span>Code</span>
+              </a>
+              {% endif %}
+            </div>
+            <!--/ Publication Links. -->
+          </div>
         </div>
       </div>
-      <div class="column">
-        <div class="content">
-          <h3 class="publication-title"><a href="https://hypernerf.github.io">HyperNeRF: A Higher-Dimensional
-                                                                              Representation
-                                                                              for Topologically Varying Neural Radiance
-                                                                              Fields</a></h3>
-          <div class="publication-venue">SIGGRAPH Asia, 2021</div>
-          <div class="publication-authors">
-            <span class="author-block"><b>Keunhong Park</b></span>,
-            <span class="author-block"><a href="https://utkarshsinha.com">Utkarsh Sinha</a></span>,
-            <span class="author-block"><a href="https://phogzone.com/">Peter Hedman</a></span>,
-            <span class="author-block"><a href="https://jonbarron.info">Jonathan T. Barron</a></span>,
-            <span class="author-block"><a href="http://sofienbouaziz.com">Sofien Bouaziz</a></span>,
-            <span class="author-block"><a href="https://www.danbgoldman.com">Dan B Goldman</a></span>,
-            <span class="author-block"><a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a></span>,
-            <span class="author-block"><a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a></span>
-          </div>
-          <p class="publication-description">By applying ideas from level set methods, we can represent topologically
-                                             changing scenes with NeRFs.</p>
-          <!-- Publication Links. -->
-          <div class="publication-links buttons">
-            <a class="external-link button is-small "
-               href="https://hypernerf.github.io">
-              <span class="icon"><i class="fas fa-globe-asia"></i></span>
-              <span>Project Page</span>
-            </a>
-            <a class="external-link button is-small "
-               href="https://arxiv.org/pdf/2106.13228.pdf">
-              <span class="icon"><i class="fas fa-file-pdf"></i></span>
-              <span>PDF</span>
-            </a>
-            <a class="external-link button is-small " href="https://arxiv.org/abs/2106.13228">
-              <span class="icon"><i class="ai ai-arxiv"></i></span>
-              <span>arXiv</span>
-            </a>
-            <a class="external-link button is-small " href="https://github.com/google/hypernerf">
-              <span class="icon"><i class="fa fab fa-github"></i></span>
-              <span>Code</span>
-            </a>
-          </div>
-          <!--/ Publication Links. -->
-        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a href="mailto:{{ site.email }}">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a class="external-link" href="https://github.com/{{ site.github_username }}">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
+          <i class="ai ai-google-scholar"></i>
+        </a>
       </div>
     </div>
-    <!--/ HyperNeRF. -->
-
-    <!-- FiG-NeRF. -->
-    <div class="publication-block columns is-vcentered">
-      <div class="column is-2">
-        <div class="publication-image publication-mousecell" id="fignerf-image">
-          <video autoplay class="" height="100%" loop muted width="100%">
-            <source src="./static/images/fignerf_after.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <img alt="FiG-NeRF" class="" src="./static/images/fignerf_before.jpg"/>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <h3 class="publication-title"><a href="https://fig-nerf.github.io">FiG-NeRF: Figure Ground Neural Radiance
-                                                                             Fields for 3D Object Category Modelling</a>
-          </h3>
-          <div class="publication-venue">3DV, 2021</div>
-          <div class="publication-authors">
-            <span class="author-block"><a href="https://chrisdxie.github.io/">Christopher Xie</a></span>,
-            <span class="author-block"><b>Keunhong Park</b></span>,
-            <span class="author-block"><a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a></span>,
-            <span class="author-block"><a href="http://matthewalunbrown.com/">Matthew Brown</a></span>
-          </div>
-          <p class="publication-description">Given a lot of images of an object category, you can train a NeRF to render
-                                             them from novel views and interpolate between different instances.</p>
-          <!-- Publication Links. -->
-          <div class="publication-links buttons">
-            <a class="external-link button is-small "
-               href="https://fig-nerf.github.io">
-              <span class="icon"><i class="fas fa-globe-asia"></i></span>
-              <span>Project Page</span>
-            </a>
-            <a class="external-link button is-small "
-               href="https://arxiv.org/pdf/2104.08418.pdf">
-              <span class="icon"><i class="fas fa-file-pdf"></i></span>
-              <span>PDF</span>
-            </a>
-            <a class="external-link button is-small " href="https://arxiv.org/abs/2104.08418">
-              <span class="icon"><i class="ai ai-arxiv"></i></span>
-              <span>arXiv</span>
-            </a>
-          </div>
-          <!--/ Publication Links. -->
-        </div>
-      </div>
-    </div>
-    <!--/ FiG-NeRF. -->
-
-    <!-- Nerfies. -->
-    <div class="publication-block columns is-vcentered">
-      <div class="column is-2">
-        <div class="publication-image publication-mousecell" id="nerfie-image">
-          <video autoplay class="" height="100%" loop muted width="100%">
-            <source src="./static/images/nerfie_after.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <img alt="Nerfies!" class="" src="./static/images/nerfie_before.jpg"/>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <h3 class="publication-title"><a href="https://nerfies.github.io">Nerfies: Deformable Neural Radiance
-                                                                            Fields</a></h3>
-          <div class="publication-venue">ICCV, 2021 <span class="publication-venue-emph">(Oral Presentation)</span>
-          </div>
-          <div class="publication-authors">
-            <span class="author-block"><b>Keunhong Park</b></span>,
-            <span class="author-block"><a href="https://utkarshsinha.com">Utkarsh Sinha</a></span>,
-            <span class="author-block"><a href="https://jonbarron.info">Jonathan T. Barron</a></span>,
-            <span class="author-block"><a href="http://sofienbouaziz.com">Sofien Bouaziz</a></span>,
-            <span class="author-block"><a href="https://www.danbgoldman.com">Dan B Goldman</a></span>,
-            <span class="author-block"><a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a></span>,
-            <span class="author-block"><a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a></span>
-          </div>
-          <p class="publication-description">Learning deformation fields with a NeRF let's you reconstruct non-rigid
-                                             scenes with high fidelity.</p>
-          <!-- Publication Links. -->
-          <div class="publication-links buttons">
-            <a class="external-link button is-small "
-               href="https://nerfies.github.io">
-              <span class="icon"><i class="fas fa-globe-asia"></i></span>
-              <span>Project Page</span>
-            </a>
-            <a class="external-link button is-small "
-               href="https://arxiv.org/pdf/2011.12948">
-              <span class="icon"><i class="fas fa-file-pdf"></i></span>
-              <span>PDF</span>
-            </a>
-            <a class="external-link button is-small " href="https://arxiv.org/abs/2011.12948">
-              <span class="icon"><i class="ai ai-arxiv"></i></span>
-              <span>arXiv</span>
-            </a>
-            <a class="external-link button is-small " href="https://github.com/google/nerfies">
-              <span class="icon"><i class="fa fab fa-github"></i></span>
-              <span>Code</span>
-            </a>
-          </div>
-          <!--/ Publication Links. -->
-        </div>
-      </div>
-    </div>
-    <!--/ Nerfies. -->
-
-    <!-- LatentFusion. -->
-    <div class="publication-block columns is-vcentered">
-      <div class="column is-2">
-        <p class="publication-image image is-square">
-          <img class="" src="./static/images/latentfusion.jpg">
-        </p>
-      </div>
-      <div class="column">
-        <div class="content">
-          <h3 class="publication-title"><a href="https://latentfusion.github.io">LatentFusion: End-to-End Differentiable
-                                                                                 Reconstruction and Rendering
-                                                                                 for Unseen Object Pose Estimation</a>
-          </h3>
-          <div class="publication-venue">CVPR, 2020</div>
-          <div class="publication-authors">
-            <span class="author-block author-block-"><b>Keunhong Park</b></span>,
-            <span class="author-block author-block-"><a
-                href="https://cs.gmu.edu/~amousavi/">Arsalan Mousavian</a></span>,
-            <span class="author-block author-block-"><a href="https://yuxng.github.io/">Yu Xiang</a></span>,
-            <span class="author-block author-block-"><a
-                href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a></span>
-          </div>
-          <p class="publication-description">By learning to predict geometry from images, you can do zero-shot pose
-                                             estimation with a single network.</p>
-          <!-- Publication Links. -->
-          <div class="publication-links buttons">
-            <a class="external-link button is-small "
-               href="https://latentfusion.github.io">
-              <span class="icon"><i class="fas fa-globe-americas"></i></span>
-              <span>Project Page</span>
-            </a>
-            <a class="external-link button is-small " href="https://arxiv.org/pdf/1912.00416.pdf">
-              <span class="icon"><i class="fas fa-file-pdf"></i></span>
-              <span>PDF</span>
-            </a>
-            <a class="external-link button is-small " href="https://arxiv.org/abs/1912.00416">
-              <span class="icon"><i class="ai ai-arxiv"></i></span>
-              <span>arXiv</span>
-            </a>
-            <a class="external-link button is-small "
-               href="https://github.com/NVlabs/latentfusion">
-              <span class="icon"><i class="fas fab fa-github"></i></span>
-              <span>Code</span>
-            </a>
-          </div>
-          <!--/ Publication Links. -->
-        </div>
-      </div>
-    </div>
-    <!--/ LatentFusion. -->
-
-    <!-- PhotoShape. -->
-    <div class="publication-block columns is-vcentered">
-      <div class="column is-2">
-        <p class="publication-image image is-square">
-          <img class="" src="./static/images/photoshape.jpg">
-        </p>
-      </div>
-      <div class="column">
-        <div class="content">
-          <h3 class="publication-title"><a href="https://photoshape.github.io">PhotoShape: Photorealistic Materials for
-                                                                               Large-Scale Shape
-                                                                               Collections</a></h3>
-          <div class="publication-venue">SIGGRAPH Asia, 2018 <span
-              class="publication-venue-emph">(Special Issue Cover)</span></div>
-          <div class="publication-authors">
-            <span class="author-block author-block-"><b>Keunhong Park</b></span>,
-            <span class="author-block author-block-"><a href="https://homes.cs.washington.edu/~krematas/">Konstantinos Rematas</a></span>,
-            <span class="author-block author-block-"><a
-                href="https://homes.cs.washington.edu/~ali">Ali Farhadi</a></span>,
-            <span class="author-block author-block-"><a
-                href="https://homes.cs.washington.edu/~seitz/">Steve Seitz</a></span>
-          </div>
-          <p class="publication-description">By pairing large collections of images, 3D models, and materials, you can
-                                             create thousands of photorealistic 3D models fully automatically.</p>
-          <!-- Publication Links. -->
-          <div class="publication-links buttons">
-            <a class="external-link button is-small "
-               href="https://photoshape.github.io">
-              <span class="icon"><i class="fas fa-globe-europe"></i></span>
-              <span>Project Page</span>
-            </a>
-            <a class="external-link button is-small "
-               href="https://homes.cs.washington.edu/~kpar/publications/photoshape_lowres.pdf">
-              <span class="icon"><i class="fas fa-file-pdf"></i></span>
-              <span>PDF</span>
-            </a>
-            <a class="external-link button is-small "
-               href="https://arxiv.org/abs/1809.09761">
-              <span class="icon"><i class="ai ai-arxiv"></i></span>
-              <span>arXiv</span>
-            </a>
-            <a class="external-link button is-small "
-               href="https://github.com/keunhong/photoshape">
-              <span class="icon"><i class="fas fab fa-github"></i></span>
-              <span>Code</span>
-            </a>
-          </div>
-          <!--/ Publication Links. -->
-        </div>
-      </div>
-    </div>
-    <!--/ PhotoShape. -->
-
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a href="mailto:3w1htpq9c@mozmail.com">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a class="external-link" href="https://github.com/keunhong">
-        <i class="fab fa-github"></i>
-      </a>
-      <a class="external-link"
-         href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6ma662dZahhSxXWh4usLcc9Y_4mLjlVZIydlL0F9lJgXde_tlP9Cws3dnoyrqppSz81tUGCG-RqawbVWHuOyy9PdPm3iZuxDLbCuYMem8YLzTQ1VA&user=HVZb-5oAAAAJ">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>

@@ -1,0 +1,85 @@
+- id: hypernerf
+  title: "HyperNeRF: A Higher-Dimensional Representation for Topologically Varying Neural Radiance Fields"
+  venue: SIGGRAPH Asia, 2021
+  description: "By applying ideas from level set methods, we can represent topologically changing scenes with NeRFs."
+  project_page: "https://hypernerf.github.io"
+  github: google/hypernerf
+  arxiv: 2106.13228
+  image: hypernerf_before.jpg
+  image_mouseover: hypernerf_after.mp4
+  authors:
+    - keunhong
+    - utsinh
+    - hedman
+    - barron
+    - sofien
+    - dgo
+    - rmbrualla
+    - smseitz
+
+- id: fignerf
+  title: "FiG-NeRF: Figure Ground Neural Radiance Fields for 3D Object Category Modelling "
+  venue: 3DV, 2021
+  description: "Given a lot of images of an object category, you can train a NeRF to render them from novel views and interpolate between different instances."
+  project_page: "https://fig-nerf.github.io"
+  arxiv: 2104.08418
+  image: fignerf_before.jpg
+  image_mouseover: fignerf_after.mp4
+  authors:
+    - chrisxie
+    - keunhong
+    - rmbrualla
+    - mtbr
+  awards:
+    - "Oral Presentation"
+
+- id: nerfies
+  title: "Nerfies: Deformable Neural Radiance Fields"
+  venue: ICCV, 2021
+  description: "Learning deformation fields with a NeRF let's you reconstruct non-rigid scenes with high fidelity."
+  project_page: "https://nerfies.github.io"
+  github: google/nerfies
+  arxiv: 2011.12948
+  image: nerfies_before.jpg
+  image_mouseover: nerfies_after.mp4
+  authors:
+    - keunhong
+    - utsinh
+    - barron
+    - sofien
+    - dgo
+    - smseitz
+    - rmbrualla
+
+- id: latentfusion
+  title: "LatentFusion: End-to-End Differentiable Reconstruction and Rendering for Unseen Object Pose Estimation "
+  venue: CVPR, 2020
+  description: "By learning to predict geometry from images, you can do zero-shot pose estimation with a single network."
+  project_page: "https://latentfusion.github.io"
+  github: NVlabs/latentfusion
+  arxiv: 1912.00416
+  image: latentfusion.jpg
+  authors:
+    - keunhong
+    - utsinh
+    - barron
+    - sofien
+    - dgo
+    - smseitz
+    - rmbrualla
+
+- id: photoshape
+  title: "PhotoShape: Photorealistic Materials for Large-Scale Shape Collections"
+  venue: SIGGRAPH Asia, 2018
+  description: "By pairing large collections of images, 3D models, and materials, you can create thousands of photorealistic 3D models fully automatically."
+  project_page: "https://latentfusion.github.io"
+  github: keunhong/photoshape
+  arxiv: 1809.09761
+  image: photoshape.jpg
+  authors:
+    - keunhong
+    - krematas
+    - ali
+    - smseitz
+  awards:
+    - "Journal Cover"
