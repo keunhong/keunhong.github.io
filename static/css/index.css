@@ -70,6 +70,13 @@
     text-decoration: underline;
 }
 
+.publication-image {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 .publication-mousecell {
     position: relative;
     font-size: 0;
@@ -77,12 +84,6 @@
 
 .publication-mousecell video {
     display: none;
-}
-
-.publication-mousecell img, .publication-mousecell video {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
 }
 
 .publication-mousecell {
