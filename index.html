@@ -51,8 +51,7 @@ layout: null
             <b>Hello, I'm {{ site.name }}</b>
           </h1>
           <div class="content has-text-justified">
-            {{ site.description|markdownify }}
-
+            {{ site.description | markdownify }}
             <div class="buttons">
               <a class="external-link button is-light" href="cv.html">
                 <span class="icon"><i class="fas fa-file"></i></span>
@@ -95,9 +94,9 @@ layout: null
       <h2 class="title is-3">News</h2>
       <div class="content">
         <ul>
-          {% for news_item in site.data.news %}
+          {% for news in site.data.news %}
           <li>
-            {{ news_item }}
+            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
           </li>
           {% endfor %}
         </ul>
