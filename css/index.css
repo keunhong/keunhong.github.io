@@ -8,7 +8,7 @@
     transform: scale(1.2);
 }
 
-.footer a {
+.footer .footer-links a {
     font-size: 25px;
     color: #000;
 }
