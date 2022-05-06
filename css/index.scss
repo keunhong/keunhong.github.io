@@ -4,7 +4,8 @@
 @import "base";
 
 .title {
-    font-family: Poppins, sans-serif;
+    font-family: 'Google Sans';
+    font-weight: 700;
 }
 
 .portrait {
@@ -23,7 +24,6 @@
     .publication-title {
         width: fit-content;
         margin: 0 !important;
-        font-family: 'Google Sans', sans-serif;
         font-weight: 600;
         font-size: 110% !important;
 
