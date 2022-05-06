@@ -1,11 +1,5 @@
 
-.portrait-column {
-    flex: none;
-    width: 30%;
-}
-
 .portrait {
-    border-radius: 100%;
     overflow: hidden;
 }
 
@@ -78,6 +72,10 @@
     font-size: 0;
 }
 
+.publication-image img {
+    width: 100%;
+}
+
 .publication-mousecell {
     position: relative;
     font-size: 0;
@@ -92,9 +90,6 @@
     height: 100%;
     display: inline-block;
     overflow: hidden;
-}
-
-.publication-banner img {
 }
 
 .publication-authors {
