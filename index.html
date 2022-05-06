@@ -23,15 +23,15 @@ layout: null
     gtag('config', '{{ site.google_analytics }}');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link href="./css/fontawesome.all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Google+Sans+Text|Noto+Sans|Poppins" rel="stylesheet">
+  <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
-  <link href="./css/bulma.min.css" rel="stylesheet">
-  <link href="./css/index.css" rel="stylesheet">
+  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script defer src="./js/fontawesome.all.min.js"></script>
-  <script src="./js/index.js"></script>
+  <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
+  <script src="{{ '/js/index.js' | relative_url }}"></script>
 </head>
 
 <body>
@@ -42,7 +42,7 @@ layout: null
 
         <div class="column is-4">
           <div class="portrait">
-            <img src="./images/portrait.jpg" />
+            <img src="{{ '/images/portrait.jpg' | relative_url }}" />
           </div>
         </div>
 
@@ -105,7 +105,7 @@ layout: null
       <h2 class="title is-3">Publications</h2>
 
       {% for publication in site.data.publications %}
-      <div class="publication-block columns is-vcentered">
+      <div class="publication-block columns">
 
         <div class="column is-2">
           <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">

@@ -1,6 +1,11 @@
+---
+---
+
+@import "base";
+
 body {
-    font-family: "Noto Sans", sans-serif;
-    margin-top: 1em;
+  margin-top: 1em;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .portrait-column {
@@ -30,5 +35,4 @@ h2 {
         height: auto;
         font-size: 9pt; /* changing to 10pt has no impact */
     }
-
 }
