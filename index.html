@@ -51,7 +51,7 @@ layout: null
             <b>Hello, I'm {{ site.name }}</b>
           </h1>
           <div class="content has-text-justified">
-            {{ site.description }}
+            {{ site.description|markdownify }}
 
             <div class="buttons">
               <a class="external-link button is-light" href="cv.html">

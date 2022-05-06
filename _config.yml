@@ -23,12 +23,12 @@ name: Keunhong Park
 position: Research Scientist 
 email: 3w1htpq9c@mozmail.com
 description: >-
-  <p>I am a research scientist at Google, where I work on computer vision, graphics, and machine learning.</p>
-  <p>
-    Previously, I was a Ph. D student at the University of Washington advised by
-    <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a> and
-    <a href="https://homes.cs.washington.edu/~seitz/">Steve Seitz</a>.
-  </p>
+  I am a research scientist at [Google](https://ai.google/research/), where I work on computer vision, graphics, and machine learning.
+
+
+  Previously, I was a Ph. D student at the [University of Washington](https://grail.cs.washington.edu/) advised by
+  [Ali Farhadi](https://homes.cs.washington.edu/~ali/) and
+  [Steve Seitz](https://homes.cs.washington.edu/~seitz/).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://keunhong.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: KeunhongP
