@@ -58,7 +58,8 @@
   project_page: "https://latentfusion.github.io"
   github: NVlabs/latentfusion
   arxiv: 1912.00416
-  image: latentfusion.jpg
+  image: latentfusion_before.jpg
+  image_mouseover: latentfusion_after.mp4
   authors:
     - keunhong
     - utsinh
