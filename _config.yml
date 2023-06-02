@@ -18,23 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Keunhong Park
-name: Keunhong Park
-position: Research Scientist 
-email: t4a0itmqm@mozmail.com
+title: Hah Min Lew
+name: Hah Min Lew
+position: AI Researcher 
+email: hahmin.lew@gmail.com
 description: >-
-  I am a research scientist at [Google](https://ai.google/research/), where I work on photorealistic 3D reconstruction at internet scale.
+  I am an AI researcher at [Klleon AI Research](https://klleon.io/), where I work on generative models for image/video synthesis.
 
 
-  Previously, I was a Ph. D student at the [University of Washington](https://grail.cs.washington.edu/) advised by
-  [Ali Farhadi](https://homes.cs.washington.edu/~ali/) and
-  [Steve Seitz](https://homes.cs.washington.edu/~seitz/).
+  Previously, I received M.S. Degree at the Department of Electrical and
+Electronic Computer Engineering [DGIST](https://eecs.dgist.ac.kr/) advised by [Jae Youn Hwang](http://mbis.dgist.ac.kr/).
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://keunhong.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: KeunhongP
-github_username: keunhong
-google_scholar: HVZb-5oAAAAJ
-google_analytics: G-MFWSBLRKG0
+url: "https://hahminlew.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: hahminlew
+google_scholar: T-styT4AAAAJ&hl
+google_analytics: G-BMWE5JFCTK
 
 # Build settings
 theme: minima
