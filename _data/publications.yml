@@ -62,12 +62,9 @@
   image_mouseover: latentfusion_after.mp4
   authors:
     - keunhong
-    - utsinh
-    - barron
-    - sofien
-    - dgo
-    - smseitz
-    - rmbrualla
+    - amousavian
+    - yux
+    - fox
 
 - id: photoshape
   title: "PhotoShape: Photorealistic Materials for Large-Scale Shape Collections"
