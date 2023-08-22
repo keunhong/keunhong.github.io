@@ -63,3 +63,12 @@ hedman:
   first_name: Peter
   last_name: Hedman
   website: https://phogzone.com
+phenzler:
+  first_name: Philipp
+  last_name: Henzler
+  website: https://henzler.github.io
+bmild:
+  first_name: Ben
+  last_name: Mildenhall
+  website: https://bmild.github.io
+
