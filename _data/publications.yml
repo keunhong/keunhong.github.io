@@ -12,6 +12,8 @@
     - bmild
     - barron
     - rmbrualla
+  awards:
+    - "Journal Paper"
 
 - id: hypernerf
   title: "HyperNeRF: A Higher-Dimensional Representation for Topologically Varying Neural Radiance Fields"
