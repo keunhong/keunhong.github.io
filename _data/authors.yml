@@ -71,4 +71,32 @@ bmild:
   first_name: Ben
   last_name: Mildenhall
   website: https://bmild.github.io
+holynski:
+  first_name: Aleksander
+  last_name: Holynski
+  website: https://holynski.org
+pooleb:
+  first_name: Ben
+  last_name: Poole
+  website: poolio.github.io
+rundiwu:
+  first_name: Rundi
+  last_name: Wu
+  website: https://www.cs.columbia.edu/~rundi/
+ruiqigao:
+  first_name: Ruiqi
+  last_name: Gao
+  website: https://ruiqigao.github.io
+danielwatson:
+  first_name: Daniel
+  last_name: Watson
+  website: https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/
+pratuls:
+  first_name: Pratul
+  last_name: Srinivasan
+  website: https://pratulsrinivasan.github.io
+dorverbin:
+  first_name: Dor
+  last_name: Verbin
+  website: https://dorverbin.github.io
 
