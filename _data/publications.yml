@@ -23,6 +23,7 @@
   venue: SIGGRAPH Asia, 2023
   description: "Preconditioning camera optimization during NeRF training significantly improves their ability to jointly recover the scene and camera parameters."
   project_page: "https://camp-nerf.github.io"
+  github: jonbarron/camp_zipnerf
   arxiv: 2308.10902
   image: camp_before.jpg
   image_mouseover: camp_after.mp4
