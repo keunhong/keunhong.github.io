@@ -15,7 +15,7 @@
     - phenzler
 - id: reconfusion
   title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
-  venue: arXiv, 2023
+  venue: CVPR, 2024
   description: "Using an multi-view image conditioned diffusion model to regularize a NeRF enabled few-view reconstruction."
   project_page: https://reconfusion.github.io
   arxiv: 2312.02981
