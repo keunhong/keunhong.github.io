@@ -3,12 +3,15 @@ junyeob:
   last_name: Baek
   website: https://cun-bjy.github.io
   is_me: true
-rmbrualla:
-  first_name: Ricardo
-  last_name: Martin-Brualla
-  website: https://ricardomartinbrualla.com
-smseitz:
-  first_name: Steven 
-  middle_name: M.
-  last_name: Seitz
-  website: https://smseitz.com
+yifu:
+  first_name: Yi-Fu
+  last_name: Wu
+  website: https://www.yifuwu.com/
+gautum:
+  first_name: Gautum
+  last_name: Singh
+  website: https://singhgautam.github.io/
+sungjin:
+  first_name: Sungjin
+  last_name: Ahn
+  website: https://mlml.kaist.ac.kr/sungjinahn

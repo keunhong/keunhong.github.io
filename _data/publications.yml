@@ -1,15 +1,13 @@
-- id: illuminerf
-  title: "IllumiNeRF 3D Relighting without Inverse Rendering"
-  venue: NeurIPS, 2024
-  description: "3D relighting by distilling samples from a 2D image relighting diffusion model into a latent-variable NeRF."
+- id: dreamweaver
+  title: "Dreamweaver: Learning Compositional World Representations from Pixels"
+  venue: ICLR, 2025
+  description: ""
   project_page: https://illuminerf.github.io
-  arxiv: 2406.06527
+  arxiv: 2501.14174
   image: illuminerf_before.jpg
   image_mouseover: illuminerf_after.mp4
   authors:
-    - xiaomingzhao
-    - pratuls
-    - dorverbin
-    - keunhong
-    - rmbrualla
-    - phenzler
+    - junyeob
+    - wifu
+    - gautam
+    - sungjin
