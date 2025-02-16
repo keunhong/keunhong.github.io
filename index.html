@@ -48,7 +48,7 @@ layout: null
 
         <div class="column">
           <h1 class="title">
-            <b>Hello, I'm {{ site.name }}</b>
+            <b>{{ site.name }}</b>
           </h1>
           <div class="content has-text-justified">
             {{ site.description | markdownify }}
@@ -70,13 +70,8 @@ layout: null
               </a>
 
               <a class="external-link button is-light" href="https://x.com/{{ site.twitter_username }}">
-<<<<<<< HEAD
                 <span class="icon"><i class="fab fa-x-twitter"></i></span>
                 <span>𝕏 (Twitter)</span>
-=======
-                <span class="icon"><i class="fa-brands fa-x-twitter"></i></span>
-                <span>X (Twitter)</span>
->>>>>>> 1813776... update X icon
               </a>
             </div>
 
@@ -96,7 +91,7 @@ layout: null
   <section class="section">
     <div class="container is-max-desktop">
 
-      <!--<h2 class="title is-3">News</h2>
+      <h2 class="title is-3">News</h2>
       <div class="content">
         <ul>
           {% for news in site.data.news %}
@@ -105,7 +100,7 @@ layout: null
           </li>
           {% endfor %}
         </ul>
-      </div>-->
+      </div>
 
       <h2 class="title is-3">Publications</h2>
 

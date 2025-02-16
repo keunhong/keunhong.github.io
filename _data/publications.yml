@@ -4,10 +4,10 @@
   description: ""
   project_page: https://illuminerf.github.io
   arxiv: 2501.14174
-  image: illuminerf_before.jpg
-  image_mouseover: illuminerf_after.mp4
+  # image: illuminerf_before.jpg
+  # image_mouseover: illuminerf_after.mp4
   authors:
     - junyeob
-    - wifu
+    - yifu
     - gautam
     - sungjin
