@@ -181,11 +181,7 @@ layout: null
       <ul>
         {% for services in site.data.services %}
         <li>
-          {% if services.type == "reviewer" %}
-          <b>Reviewer</b>
-            • {{ services.description }}
-          {% endif %}
-          
+            <b>{{ services.role }}</b>: {{ services.description | markdownify | remove: '<p>' | remove: '</p>' }}
         </li>
         {% endfor %}
       </ul>
