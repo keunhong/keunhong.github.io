@@ -11,3 +11,19 @@
     - yifu
     - gautam
     - sungjin
+
+- id: planDQ
+  title: "PlanDQ: Hierarchical Plan Orchestration via D-Conductor and Q-Performer"
+  venue: ICML, 2024
+  description: ""
+  # project_page: https://illuminerf.github.io
+  arxiv: 2406.06793
+  # image: illuminerf_before.jpg
+  # image_mouseover: illuminerf_after.mp4
+  authors:
+    - chang
+    - junyeob
+    - fei
+    - kenji
+    - caglar
+    - sungjin

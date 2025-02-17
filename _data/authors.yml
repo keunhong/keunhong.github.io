@@ -15,3 +15,23 @@ sungjin:
   first_name: Sungjin
   last_name: Ahn
   website: https://mlml.kaist.ac.kr/sungjinahn
+
+chang:
+  first_name: Chang
+  last_name: Chen
+  # website: https://changl1u.github.io/
+
+fei:
+  first_name: Fei
+  last_name: Deng
+  website: https://scholar.google.com/citations?user=F-V72fUAAAAJ&hl=en
+
+kenji:
+  first_name: Kenji
+  last_name: Kawaguchi
+  website: https://ml.comp.nus.edu.sg/kawaguchi
+
+caglar:
+  first_name: Caglar
+  last_name: Gulcehre
+  website: https://www.caglarg.com/
