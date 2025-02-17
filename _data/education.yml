@@ -1,11 +1,14 @@
-- name: University of Washington 
+- name: Korea Advanced Institute of Science and Technology (KAIST)
   description: >-
-    Ph. D in Computer Science, advised by <a href="https://smseitz.com">Steven M. Seitz</a> and
-    <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>.<br />
-    Supported by Samsung Scholarship 2015-2020 ($50,000/year for 5 years)
-  dates: Fall 2015 - Spring 2022
+    Ph. D in Computer Science, advised by <a href="https://mlml.kaist.ac.kr/sungjinahn">Sungjin Ahn</a>
+  dates: 2025.02 - Present
 
-- name: University of Illinois at Urbana-Champaign
+- name: Korea Advanced Institute of Science and Technology (KAIST)
   description: >-
-    B.S. in Computer Science, advised by <a href="https://dhoiem.cs.illinois.edu/">Derek Hoiem</a>.
-  dates: Fall 2009 - Spring 2013
+    M.S. in Artificial Intelligence, advised by <a href="https://mlml.kaist.ac.kr/sungjinahn">Sungjin Ahn</a>.
+  dates: 2023.02 - 2025.02
+
+- name: Hanyang University (ERICA)
+  description: >-
+    B.S. in Robotics, advised by <a href="https://scholar.google.co.kr/citations?user=ijf6dGMAAAAJ&hl=ko&oi=ao">Taejoon Park</a>.
+  dates: 2014.03 - 2018.02

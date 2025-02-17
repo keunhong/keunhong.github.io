@@ -1,11 +1,15 @@
-# - company: Google
-#   description: Research Scientist
-#   dates: "May 2022 - Jan 2024"
-#   location: San Francisco, CA
+- company: MakinaRocks
+  description: >-
+    ML Research Engineer
+    focused on Robotics Control & Optimization
+    (~ 22. 05) Military Service as a Technical Research Personnel (전문연구요원)
+  dates: "Jun 2021 - Jun 2022"
+  location: Seoul, South Korea
 
-# - company: Google
-#   description: >-
-#     Research Intern on the <a href="https://blog.google/technology/research/project-starline/">Project Starline</a> team.
-#     Worked on <a href="https://nerfies.github.io">Nerfies</a> and <ahref="https://hypernerf.github.io">HyperNeRF</a>.
-#   dates: "Jun 2020 - Sep 2021"
-#   location: Seattle, WA
+- company: Syscon Robotics
+  description: >-
+    Robotics Software Engineer / Research Strategy Manager
+    Early Member & Core Architect
+    (19.05 ~ ) Military Service as a Technical Research Personnel (전문연구요원)
+  dates: "Dec 2017 - Jun 2021"
+  location: Incheon, South Korea
