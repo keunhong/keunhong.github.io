@@ -175,6 +175,22 @@ layout: null
       </div>
       {% endfor %}
     </div>
+
+    <h2 class="title is-3">Services</h2>
+    <div class="content">
+      <ul>
+        {% for services in site.data.services %}
+        <li>
+          {% if services.type == "reviewer" %}
+          <b>Reviewer</b>
+            • {{ services.description }}
+          {% endif %}
+          
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
   </section>
 
 
