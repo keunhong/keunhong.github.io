@@ -23,12 +23,9 @@ name: Junyeob Baek
 position: PhD Student 
 email: wnsdlqjtm@kaist.ac.kr
 description: >-
-  I am a researcher in 3D computer vision and generative AI. I currently co-lead the development of spatial intelligence at [World Labs](https://www.worldlabs.ai/blog).
-  I was previously a research scientist at [Google](https://ai.google/research/) where I built technology to [generate 3D assets](https://blog.google/products/shopping/search-on-2022-shopping/) for products on Google Search.
-
-  I received my Ph.D from the [University of Washington](https://grail.cs.washington.edu/) in 2021 where I was advised by
-  [Ali Farhadi](https://homes.cs.washington.edu/~ali/) and
-  [Steve Seitz](https://homes.cs.washington.edu/~seitz/).
+I am a Ph.D. Student at KAIST working with [Prof. Sungjin Ahn](https://mlml.kaist.ac.kr/sungjinahn). My research goal lies in crafting lifelong developmental agents with advanced cognitive capabilities similar to humans. 
+To achieve this, I am particularly interested in systematic world modeling, continual knowledge and skill acquisition, open-endedness, and the alignment problem. 
+Prior to my Ph.D., I received my MS from [KAIST](https://mlml.kaist.ac.kr/) under the supervision of Prof. Sungjin Ahn. Before entering academia, I worked for 4.5 years in industry, gaining practical experience in robotics at [Syscon Robotics](https://sysconrobotics.com/us/index.html) and AI at [Makinarocks](https://www.makinarocks.ai/en/).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cun-bjy.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: JunyeobB
