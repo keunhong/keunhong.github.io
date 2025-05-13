@@ -23,12 +23,14 @@ name: Keunhong Park
 position: Research Scientist 
 email: dp9jalxhq@mozmail.com
 description: >-
-  I am a researcher in 3D computer vision and generative AI. I currently co-lead the development of spatial intelligence at [World Labs](https://www.worldlabs.ai/blog).
-  I was previously a research scientist at [Google](https://ai.google/research/) where I built technology to [generate 3D assets](https://blog.google/products/shopping/search-on-2022-shopping/) for products on Google Search.
+  I am a researcher in 3D computer vision and generative AI. I am a founding member at [World Labs](https://www.worldlabs.ai/blog) where we are expanding the frontier of spatial intelligence.
+  I was previously a research scientist at [Google](https://ai.google/research/) where I built technology to [generate 3D assets](https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/) for products on Google Search.
 
   I received my Ph.D from the [University of Washington](https://grail.cs.washington.edu/) in 2021 where I was advised by
   [Ali Farhadi](https://homes.cs.washington.edu/~ali/) and
   [Steve Seitz](https://homes.cs.washington.edu/~seitz/).
+
+  My current research interests are primarily in 3D generative AI and diffusion models.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://keunhong.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: KeunhongP
