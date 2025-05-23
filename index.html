@@ -23,7 +23,9 @@ layout: null
     gtag('config', '{{ site.google_analytics }}');
   </script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
   <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
@@ -91,17 +93,51 @@ layout: null
   <section class="section">
     <div class="container is-max-desktop">
 
-      <!--<h2 class="title is-3">News</h2>
-      <div class="content">
-        <ul>
-          {% for news in site.data.news %}
-          <li>
-            <b>{{ news.date }}</b>: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
-          </li>
-          {% endfor %}
-        </ul>
-      </div>-->
+      <h2 class="title is-3">Highlights</h2>
+      <div class="columns is-multiline">
+        {% for highlight in site.data.highlights %}
+        <div class="column is-5">
+          <div class="card highlight-card">
+            <div class="card-image">
+              <figure class="image">
+                {% if highlight.video %}
+                <video autoplay loop muted playsinline class="highlight-media">
+                  <source src="./images/{{ highlight.video }}" type="video/mp4">
+                  <img src="./images/{{ highlight.image }}" alt="{{ highlight.title }}">
+                </video>
+                {% else %}
+                <img src="./images/{{ highlight.image }}" alt="{{ highlight.title }}">
+                {% endif %}
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-5 highlight-title">
+                    <a href="{{ highlight.url }}" target="_blank" rel="noopener">{{ highlight.title }}</a>
+                  </p>
+                </div>
+              </div>
+              <div class="content highlight-description">
+                {{ highlight.description }}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
+  <!-- Divider between Highlights and Publications -->
+  <div class="hr">
+    <div class="container">
+      <hr>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container is-max-desktop">
       <h2 class="title is-3">Publications</h2>
 
       {% for publication in site.data.publications %}
@@ -139,8 +175,8 @@ layout: null
             <div class="publication-venue">
               <span>{{ publication.venue }}</span>
               {% for award in publication.awards %}
-                <span class="publication-venue-emph">{{ award }}<span>
-              {% endfor %}
+              <span class="publication-venue-emph">{{ award }}<span>
+                  {% endfor %}
             </div>
             <p class="publication-description">{{ publication.description }}</p>
             <!-- Publication Links. -->
@@ -149,7 +185,8 @@ layout: null
                 <span class="icon"><i class="fas fa-globe-asia"></i></span>
                 <span>Project Page</span>
               </a>
-              <a class="external-link button is-small is-ghost" href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
+              <a class="external-link button is-small is-ghost"
+                href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
                 <span>PDF</span>
               </a>
