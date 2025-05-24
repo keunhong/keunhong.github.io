@@ -40,12 +40,12 @@ layout: null
 
   <section class="hero">
     <div class="hero-body container is-max-desktop">
-      <div class="columns is-vcentered">
+      <div class="columns">
 
         <div class="column is-4">
-          <div class="portrait">
+          <figure class="image portrait">
             <img src="{{ '/images/portrait.jpg' | relative_url }}" />
-          </div>
+          </figure>
         </div>
 
         <div class="column">
@@ -96,7 +96,7 @@ layout: null
       <h2 class="title is-3">Highlights</h2>
       <div class="columns is-multiline">
         {% for highlight in site.data.highlights %}
-        <div class="column is-5">
+        <div class="column is-4">
           <div class="card highlight-card">
             <div class="card-image">
               <figure class="image">
