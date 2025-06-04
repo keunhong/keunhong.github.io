@@ -1,3 +1,38 @@
+- id: djepa
+  title: "Discrete JEPA: Learning Discrete Token Representations without Reconstruction"
+  venue: On Review
+  description: ""
+  # project_page: https://cun-bjy.github.io/dreamweaver-website/
+  # arxiv: n
+  # image: none
+  # image_mouseover: illuminerf_after.mp4
+  authors:
+    - junyeob
+    - Hosung Lee
+    - Christopher Hoang
+    - Mengye Ren
+    - sungjin
+
+- id: slot-mllm
+  title: "Slot-MLLM: Object-Centric Visual Tokenization for Multimodal LLM"
+  venue: Preprint
+  description: ""
+  # project_page: none
+  arxiv: 2505.17726
+  # image: none
+  # image_mouseover: illuminerf_after.mp4
+  authors:
+    - Donghwan Chi
+    - Hyomin Kim
+    - Yoojin Oh
+    - Yongjin kim
+    - Donghoon Lee
+    - Daejin Jo
+    - Jonmin Kim
+    - junyeob
+    - sungjin
+    - Sungwoong Kim
+
 - id: dreamweaver
   title: "Dreamweaver: Learning Compositional World Models from Pixels"
   venue: ICLR, 2025
