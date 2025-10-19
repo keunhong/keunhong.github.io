@@ -1,9 +1,18 @@
+- id: rtfm-oct-16
+  title: "Real-Time World Models"
+  organization: "World Labs"
+  date: "October 2025"
+  description: "Explore generated worlds in real-time."
+  url: "https://www.worldlabs.ai/blog/rtfm"
+  image: "rtfm-before.png"
+  video: "rtfm-after.mp4"
+
 - id: world-labs-dec2024
   title: "Generating Worlds"
   organization: "World Labs"
   date: "December 2024"
   description: "Transform a single image into an explorable 3D world using generative AI."
-  url: "https://www.worldlabs.ai/blog"
+  url: "https://www.worldlabs.ai/blog/generating-worlds"
   image: "world-labs.jpg"
   video: "worldlabs-dec2.mp4"
 
