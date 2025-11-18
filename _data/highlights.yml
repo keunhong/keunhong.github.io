@@ -1,3 +1,12 @@
+- id: marble-nov-12
+  title: "Marble: A Multimodal World Model"
+  organization: "World Labs"
+  date: "November 2025"
+  description: "A frontier multimodal world model."
+  url: "https://www.worldlabs.ai/blog/rtfm"
+  image: "marble-before.png"
+  video: "marble-after.mp4"
+
 - id: rtfm-oct-16
   title: "Real-Time Frame Model"
   organization: "World Labs"
@@ -20,7 +29,7 @@
   title: "Generating 3D Products"
   organization: "Google Research"
   date: "May 2025"
-  description: "Transform a few photos into interactive 3D shopping experiences using generative AI."
+  description: "Transforming photos into shoppable 3D products."
   url: "https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/"
   image: "google-3d-shopping.jpg"
   video: "google-3d-products.mp4"
