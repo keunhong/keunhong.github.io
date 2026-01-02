@@ -171,6 +171,11 @@ layout: null
                 {% endif %}
               </span>
               {% endfor %}
+              {% if publication.with_collaborators %}
+              <span class="collaborators-suffix">
+                with collaborators at <a href="{{ publication.with_collaborators.url }}">{{ publication.with_collaborators.name }}</a>
+              </span>
+              {% endif %}
             </div>
             <div class="publication-venue">
               <span>{{ publication.venue }}</span>
@@ -185,6 +190,7 @@ layout: null
                 <span class="icon"><i class="fas fa-globe-asia"></i></span>
                 <span>Project Page</span>
               </a>
+              {% if publication.arxiv %}
               <a class="external-link button is-small is-ghost"
                 href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
                 <span class="icon"><i class="fas fa-file-pdf"></i></span>
@@ -194,6 +200,7 @@ layout: null
                 <span class="icon"><i class="ai ai-arxiv"></i></span>
                 <span>arXiv</span>
               </a>
+              {% endif %}
               {% if publication.github %}
               <a class="external-link button is-small is-ghost" href="https://github.com/{{ publication.github }}">
                 <span class="icon"><i class="fa fab fa-github"></i></span>

@@ -1,3 +1,16 @@
+- id: rtfm
+  title: "RTFM: Real-Time Frame Model"
+  venue: "Blog Post, 2025"
+  description: "A real-time, auto-regressive diffusion model renders persistent 3D worlds on a single GPU."
+  project_page: "https://www.worldlabs.ai/blog/rtfm"
+  image: rtfm-before.png
+  image_mouseover: rtfm-after.mp4
+  authors:
+    - keunhong
+  with_collaborators:
+    name: "World Labs"
+    url: "https://worldlabs.ai"
+
 - id: illuminerf
   title: "IllumiNeRF 3D Relighting without Inverse Rendering"
   venue: NeurIPS, 2024
