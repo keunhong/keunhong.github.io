@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body class="bg-surface text-text font-serif antialiased print:bg-white">
+  <div class="print:hidden">
+    {% include header.html %}
+  </div>
+  <main class="max-w-4xl mx-auto px-6 py-8 print:py-4 print:px-4">
+    {{ content }}
+  </main>
+  <div class="print:hidden">
+    {% include footer.html %}
+  </div>
+</body>
+</html>

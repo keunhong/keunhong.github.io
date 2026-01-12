@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="py-12 md:py-16 bg-surface">
+  <div class="max-w-4xl mx-auto px-6">
+    <header class="mb-8">
+      <h1 class="font-display text-3xl md:text-4xl font-semibold text-text">
+        {{ page.title }}
+      </h1>
+      <p class="text-text-muted mt-2">
+        {{ page.date | date: "%B %d, %Y" }}
+        {% if page.tags.size > 0 %}
+        <span class="mx-2">·</span>
+        {% for tag in page.tags %}
+          <span class="inline-block bg-surface-muted text-text-body text-sm px-2 py-0.5 rounded mr-1">{{ tag }}</span>
+        {% endfor %}
+        {% endif %}
+      </p>
+    </header>
+
+    <div class="prose prose-lg max-w-none">
+      {{ content }}
+    </div>
+
+    <footer class="mt-12 pt-8 border-t border-border">
+      <a href="{{ '/blog.html' | relative_url }}" class="inline-flex items-center text-link hover:text-link-hover transition-colors no-underline">
+        ← Back to blog
+      </a>
+    </footer>
+  </div>
+</article>

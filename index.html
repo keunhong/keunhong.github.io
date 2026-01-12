@@ -1,247 +1,75 @@
 ---
-layout: null
+layout: default
+title: Keunhong Park
 ---
-<!DOCTYPE html>
-<html lang="en-US">
 
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<!-- Hero Section -->
+<section class="py-12 md:py-16 bg-surface">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-8">
+      <!-- Portrait -->
+      <div class="flex-shrink-0">
+        <img src="{{ '/images/portrait.jpg' | relative_url }}"
+             alt="{{ site.name }}"
+             class="w-48 h-48 md:w-56 md:h-56 object-cover">
+      </div>
 
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>{{ site.name }}</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', '{{ site.google_analytics }}');
-  </script>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link href="{{ '/css/fontawesome.all.min.css' | relative_url }}" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
-  <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
-  <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
-  <script src="{{ '/js/index.js' | relative_url }}"></script>
-</head>
-
-<body>
-
-  <section class="hero">
-    <div class="hero-body container is-max-desktop">
-      <div class="columns">
-
-        <div class="column is-4">
-          <figure class="image portrait">
-            <img src="{{ '/images/portrait.jpg' | relative_url }}" />
-          </figure>
+      <!-- Bio -->
+      <div class="flex-1">
+        <h1 class="font-display text-3xl md:text-4xl font-semibold text-text">
+          Hello, I'm {{ site.name }}
+        </h1>
+        <div class="text-text-body mt-4 max-w-prose leading-relaxed prose">
+          {{ site.description | markdownify }}
         </div>
 
-        <div class="column">
-          <h1 class="title">
-            <b>Hello, I'm {{ site.name }}</b>
-          </h1>
-          <div class="content has-text-justified">
-            {{ site.description | markdownify }}
-            <div class="buttons">
-              <a class="external-link button is-light" href="cv.html">
-                <span class="icon"><i class="fas fa-file"></i></span>
-                <span>CV</span>
-              </a>
+        <!-- Links -->
+        <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
+          <a href="{{ '/cv/' | relative_url }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
+            {% include icons/file.html class="w-4 h-4 mr-1.5" %}
+            CV
+          </a>
 
-              <a class="external-link button is-light"
-                href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-                <span class="icon"><i class="ai ai-google-scholar"></i></span>
-                <span>Scholar</span>
-              </a>
+          <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
+            <i class="ai ai-google-scholar mr-1.5"></i>
+            Scholar
+          </a>
 
-              <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Github</span>
-              </a>
+          <a href="https://github.com/{{ site.github_username }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
+            {% include icons/github.html class="w-4 h-4 mr-1.5" %}
+            GitHub
+          </a>
 
-              <a class="external-link button is-light" href="https://twitter.com/{{ site.twitter_username }}">
-                <span class="icon"><i class="fab fa-twitter"></i></span>
-                <span>Twitter</span>
-              </a>
-            </div>
-
-          </div>
+          <a href="https://twitter.com/{{ site.twitter_username }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
+            {% include icons/twitter.html class="w-4 h-4 mr-1.5" %}
+            Twitter
+          </a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- News. -->
-  <div class="hr">
-    <div class="container">
-      <hr>
     </div>
   </div>
+</section>
 
-  <section class="section">
-    <div class="container is-max-desktop">
-
-      <h2 class="title is-3">Highlights</h2>
-      <div class="columns is-multiline">
-        {% for highlight in site.data.highlights %}
-        <div class="column is-3">
-          <div class="card highlight-card">
-            <div class="card-image">
-              <figure class="image">
-                {% if highlight.video %}
-                <video autoplay loop muted playsinline class="highlight-media">
-                  <source src="./images/{{ highlight.video }}" type="video/mp4">
-                  <img src="./images/{{ highlight.image }}" alt="{{ highlight.title }}">
-                </video>
-                {% else %}
-                <img src="./images/{{ highlight.image }}" alt="{{ highlight.title }}">
-                {% endif %}
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <p class="title is-5 highlight-title">
-                    <a href="{{ highlight.url }}" target="_blank" rel="noopener">{{ highlight.title }}</a>
-                  </p>
-                </div>
-              </div>
-              <div class="content highlight-description">
-                {{ highlight.description }}
-              </div>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
-  <!-- Divider between Highlights and Publications -->
-  <div class="hr">
-    <div class="container">
-      <hr>
-    </div>
-  </div>
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Publications</h2>
-
-      {% for publication in site.data.publications %}
-      <div class="publication-block columns">
-
-        <div class="column is-2">
-          <div class="publication-image {% if publication.image_mouseover %}publication-mousecell{% endif %}">
-            {% if publication.image_mouseover contains "mp4" %}
-            <video autoplay preload playsinline class="" height="100%" loop muted width="100%">
-              <source src="./images/{{ publication.image_mouseover }}" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            {% endif %}
-            <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" />
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="content">
-            <h3 class="publication-title"><a href="{{ publication.project_page }}">{{ publication.title }}</a></h3>
-            <div class="publication-authors">
-              {% for author_id in publication.authors %}
-              {% assign author = site.data.authors[author_id] %}
-              <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                {% if author.is_me %}
-                {{ author.first_name }} {{author.middle_name}} {{ author.last_name }}{% if forloop.last == false %},{%
-                endif %}
-                {% else %}
-                <a href="{{ author.website }}">{{ author.first_name }} {{ author.middle_name }} {{ author.last_name
-                  }}</a>{% if forloop.last == false %},{% endif %}
-                {% endif %}
-              </span>
-              {% endfor %}
-              {% if publication.with_collaborators %}
-              <span class="collaborators-suffix">
-                with collaborators at <a href="{{ publication.with_collaborators.url }}">{{ publication.with_collaborators.name }}</a>
-              </span>
-              {% endif %}
-            </div>
-            <div class="publication-venue">
-              <span>{{ publication.venue }}</span>
-              {% for award in publication.awards %}
-              <span class="publication-venue-emph">{{ award }}<span>
-                  {% endfor %}
-            </div>
-            <p class="publication-description">{{ publication.description }}</p>
-            <!-- Publication Links. -->
-            <div class="publication-links buttons field has-addons">
-              <a class="external-link button is-small is-ghost" href="{{ publication.project_page }}">
-                <span class="icon"><i class="fas fa-globe-asia"></i></span>
-                <span>Project Page</span>
-              </a>
-              {% if publication.arxiv %}
-              <a class="external-link button is-small is-ghost"
-                href="https://arxiv.org/pdf/{{ publication.arxiv }}.pdf">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>PDF</span>
-              </a>
-              <a class="external-link button is-small is-ghost" href="https://arxiv.org/abs/{{ publication.arxiv }}">
-                <span class="icon"><i class="ai ai-arxiv"></i></span>
-                <span>arXiv</span>
-              </a>
-              {% endif %}
-              {% if publication.github %}
-              <a class="external-link button is-small is-ghost" href="https://github.com/{{ publication.github }}">
-                <span class="icon"><i class="fa fab fa-github"></i></span>
-                <span>Code</span>
-              </a>
-              {% endif %}
-            </div>
-            <!--/ Publication Links. -->
-          </div>
-        </div>
-      </div>
+<!-- Highlights Section -->
+<section class="relative py-12 md:py-16">
+  <!-- Background with faded edges -->
+  <div class="absolute inset-0 bg-surface-muted" style="mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);"></div>
+  <div class="relative max-w-4xl mx-auto px-6">
+    <h2 class="font-display text-2xl font-semibold text-text mb-8">Highlights</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {% for highlight in site.data.highlights %}
+        {% include highlight.html h=highlight %}
       {% endfor %}
     </div>
-  </section>
+  </div>
+</section>
 
-
-  <footer class="footer">
-    <div class="container">
-      <div class="content footer-links has-text-centered">
-        <a href="mailto:{{ site.email }}">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a class="external-link" href="https://github.com/{{ site.github_username }}">
-          <i class="fab fa-github"></i>
-        </a>
-        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">
-          <i class="ai ai-google-scholar"></i>
-        </a>
-      </div>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-8">
-          <div class="content">
-            <p>
-              Feel free to <a href="https://github.com/keunhong/keunhong.github.io">borrow this template</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</body>
-
-</html>
+<!-- Publications Section -->
+<section class="py-12 md:py-16 bg-surface">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="font-display text-2xl font-semibold text-text mb-8">Publications</h2>
+    {% for pub in site.data.publications %}
+      {% include publication.html pub=pub %}
+    {% endfor %}
+  </div>
+</section>
