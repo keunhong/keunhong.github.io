@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body class="bg-surface text-text font-serif antialiased">
+  {% include header.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+
+  <!-- Mouseover video toggle script -->
+  <script>
+    document.querySelectorAll('.publication-mousecell').forEach(function(el) {
+      var video = el.querySelector('video');
+      var img = el.querySelector('img');
+      if (video && img) {
+        el.addEventListener('mouseenter', function() {
+          video.classList.remove('hidden');
+          img.classList.add('hidden');
+        });
+        el.addEventListener('mouseleave', function() {
+          video.classList.add('hidden');
+          img.classList.remove('hidden');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

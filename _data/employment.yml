@@ -1,17 +1,17 @@
 - company: World Labs
-  description: Founding Member
+  description: Founding Member leading pretraining efforts. Creator of <a href="https://www.worldlabs.ai/blog/rtfm">RTFM</a>.
   dates: "Jan 2024 - (current)"
   location: San Francisco, CA
 
 - company: Google
-  description: Research Scientist
+  description: Research Scientist. Co-built the team and technologies to <a href="https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/">generate 3D assets for products on Google Search</a>.
   dates: "May 2022 - Jan 2024"
   location: San Francisco, CA
 
 - company: Google
   description: >-
     Research Intern on the <a href="https://blog.google/technology/research/project-starline/">Project Starline</a> team.
-    Worked on <a href="https://nerfies.github.io">Nerfies</a> and <ahref="https://hypernerf.github.io">HyperNeRF</a>.
+    Published <a href="https://nerfies.github.io">Nerfies</a> and <a href="https://hypernerf.github.io">HyperNeRF</a>.
   dates: "Jun 2020 - Sep 2021"
   location: Seattle, WA
 

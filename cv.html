@@ -1,140 +1,103 @@
 ---
-layout: null
+layout: cv
+title: CV - Keunhong Park
 ---
-<!DOCTYPE html>
-<html lang="en-US">
 
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<!-- Header -->
+<header class="flex flex-col md:flex-row print:flex-row md:items-center print:items-center gap-6 pb-6 border-b border-border-subtle">
+  <div class="flex-1">
+    <h1 class="font-display text-3xl md:text-4xl font-semibold text-text">{{ site.name }}</h1>
+    <p class="text-text-body text-lg mt-1">{{ site.position }}</p>
+  </div>
 
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>{{ site.title }}</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+  <div class="text-sm text-text-body space-y-1 md:text-right print:text-right">
+    <p>
+      <a href="{{ site.url }}" class="hover:text-text no-underline">
+        {% include icons/globe.html class="w-4 h-4 inline mr-1" %}
+        {% assign url_parts = site.url | split: "//" %}{{ url_parts[1] }}
+      </a>
+    </p>
+    <p>
+      <a href="https://github.com/{{ site.github_username }}" class="hover:text-text no-underline">
+        {% include icons/github.html class="w-4 h-4 inline mr-1" %}
+        {{ site.github_username }}
+      </a>
+    </p>
+    <p>
+      <a href="https://twitter.com/{{ site.twitter_username }}" class="hover:text-text no-underline">
+        {% include icons/twitter.html class="w-4 h-4 inline mr-1" %}
+        {{ site.twitter_username }}
+      </a>
+    </p>
+    <p>
+      <a href="mailto:{{ site.email }}" class="hover:text-text no-underline">
+        {% include icons/envelope.html class="w-4 h-4 inline mr-1" %}
+        {{ site.email }}
+      </a>
+    </p>
+  </div>
+</header>
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', '{{ site.google_analytics }}');
-  </script>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link href="./css/fontawesome.all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
-  <link href="./css/bulma.min.css" rel="stylesheet">
-  <link href="./css/cv.css" rel="stylesheet">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script defer src="./js/fontawesome.all.min.js"></script>
-</head>
-
-<body>
-
-  <section>
-    <div class="container is-max-desktop">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <h1 class="title is-2">{{ site.name }}</h1>
-          <h1 class="subtitle is-5">{{ site.position }}</h1>
-        </div>
-        <div class="column is-narrow portrait-column">
-          <img class="portrait-image" src="./images/portrait.jpg" alt="A portrait of Keunhong Park" />
-        </div>
-        <div class="column has-text-right">
-          <p>
-            <a href="{{ site.url }}">
-              <i class="fas fa-home"></i>
-              {% assign url_parts = site.url | split: "//" %}
-              {{ url_parts[1] }}
-            </a>
-          </p>
-          <p>
-            <a href="https://github.com/{{ site.github_username }}">
-              <i class="fab fa-github"></i>
-              {{ site.github_username }}
-            </a>
-          </p>
-          <p>
-            <a href="https://twitter.com/{{ site.twitter_username }}">
-              <i class="fab fa-twitter"></i>
-              {{ site.twitter_username }}
-            </a>
-          </p>
-          <p>
-            <a href="mailto:{{ site.email }}">
-              <i class="fas fa-envelope"></i>
-              {{ site.email }}
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="content">
-        <h2>Education</h2>
-        {% for school in site.data.education %}
-        <div class="columns">
-          <div class="column is-four-fifths">
-            <b>{{ school.name }}</b><br />
-            {{ school.description }}
-          </div>
-          <div class="column is-one-fifths has-text-right">
-            {{ school.dates }}
-          </div>
-        </div>
-        {% endfor %}
-
-        <h2>Employment</h2>
-
-        {% for job in site.data.employment %}
-        <div class="columns">
-          <div class="column is-four-fifths">
-            <b>{{ job.company }}</b><br />
-            {{ job.description }}
-          </div>
-          <div class="column is-one-fifths has-text-right">
-            {{ job.dates }}
-            <br />
-            {{ job.location }}
-          </div>
-        </div>
-        {% endfor %}
-
-        <h2>Publications</h2>
-
-        {% for publication in site.data.publications %}
-        <div class="columns">
-          <div class="column is-four-fifths">
-            <a href="{{ publication.project_page }}"><b>{{ publication.title }}</b></a>
-            <div class="publication-authors">
-              {% for author_id in publication.authors %}
-              {% assign author = site.data.authors[author_id] %}
-              <span class="author-block {% if author.is_me %}author-me{% endif %}">
-                {% if author.is_me %}
-                {{ author.first_name | slice: 0 }}. {{ author.last_name }}{% if forloop.last == false %},{%
-                endif %}
-                {% else %}
-                <a href="{{ author.website }}">{{ author.first_name | slice: 0 }}. {{ author.last_name }}</a>{% if
-                forloop.last == false %},{% endif %}
-                {% endif %}
-              </span>
-              {% endfor %}
-            </div>
-            {{ publication.description }}
-          </div>
-          <div class="column is-one-fifths has-text-right">
-            {{ publication.venue }}
-          </div>
-        </div>
-        {% endfor %}
-      </div>
+<!-- Education -->
+<section class="mt-8">
+  <h2 class="font-display text-2xl font-semibold text-text mb-4">Education</h2>
+  {% for school in site.data.education %}
+  <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-4">
+    <div class="flex-1">
+      <p class="font-semibold">{{ school.name }}</p>
+      <p class="text-text-body text-sm">{{ school.description }}</p>
     </div>
-  </section>
+    <div class="text-text-muted text-sm md:text-right flex-shrink-0">
+      {{ school.dates }}
+    </div>
+  </div>
+  {% endfor %}
+</section>
 
-</body>
+<!-- Employment -->
+<section class="mt-8">
+  <h2 class="font-display text-2xl font-semibold text-text mb-4">Employment</h2>
+  {% for job in site.data.employment %}
+  <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-4">
+    <div class="flex-1">
+      <p class="font-semibold">{{ job.company }}</p>
+      <p class="text-text-body text-sm">{{ job.description }}</p>
+    </div>
+    <div class="text-text-muted text-sm md:text-right flex-shrink-0">
+      {{ job.dates }}<br>
+      {{ job.location }}
+    </div>
+  </div>
+  {% endfor %}
+</section>
 
-</html>
+<!-- Publications -->
+<section class="mt-8">
+  <h2 class="font-display text-2xl font-semibold text-text mb-4">Publications</h2>
+  {% for publication in site.data.publications %}
+  <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-4">
+    <div class="flex-1">
+      <p>
+        <a href="{{ publication.project_page }}" class="font-semibold hover:text-text-body">{{ publication.title }}</a>
+      </p>
+      <p class="text-text-body text-sm">
+        {% for author_id in publication.authors %}
+          {% assign author = site.data.authors[author_id] %}
+          {% if author.is_me %}
+            <span class="font-semibold">{{ author.first_name | slice: 0 }}. {{ author.last_name }}</span>{% unless forloop.last %}, {% endunless %}
+          {% else %}
+            <a href="{{ author.website }}" class="hover:text-text">{{ author.first_name | slice: 0 }}. {{ author.last_name }}</a>{% unless forloop.last %}, {% endunless %}
+          {% endif %}
+        {% endfor %}
+        {% if publication.with_collaborators %}
+          with collaborators at <a href="{{ publication.with_collaborators.url }}" class="hover:text-text">{{ publication.with_collaborators.name }}</a>
+        {% endif %}
+      </p>
+      <p class="text-text-muted text-sm">{{ publication.description }}</p>
+    </div>
+    <div class="text-text-muted text-sm md:text-right flex-shrink-0">
+      {{ publication.venue }}
+    </div>
+  </div>
+  {% endfor %}
+</section>

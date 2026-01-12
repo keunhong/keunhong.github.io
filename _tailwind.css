@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Surface colors */
+  --color-surface: #ffffff;
+  --color-surface-alt: #fcfcfc;
+  --color-surface-muted: rgb(250, 249, 245);
+
+  /* Text colors */
+  --color-text: #171717;
+  --color-text-body: #404040;
+  --color-text-muted: #666666;
+  --color-text-subtle: #a3a3a3;
+
+  /* Border colors */
+  --color-border: #e5e5e5;
+  --color-border-subtle: #f0f0f0;
+
+  /* Link colors */
+  --color-link: #666666;
+  --color-link-hover: #171717;
+  --color-link-underline: #d4d4d4;
+
+  /* Fonts */
+  --font-serif: 'Crimson Pro', Georgia, Cambria, serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Source Sans 3', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    line-height: 1.65;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-text);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  a:not(.no-underline) {
+    color: var(--color-link);
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-link-underline);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+
+  a.no-underline {
+    color: var(--color-link);
+    text-decoration-line: none;
+  }
+
+  a:hover {
+    color: var(--color-link-hover);
+  }
+
+  /* Prose typography customization - CSS variables */
+  .prose {
+    --tw-prose-body: var(--color-text-body);
+    --tw-prose-headings: var(--color-text);
+    --tw-prose-lead: var(--color-text-muted);
+    --tw-prose-links: var(--color-link);
+    --tw-prose-bold: var(--color-text);
+    --tw-prose-counters: var(--color-text-muted);
+    --tw-prose-bullets: var(--color-text-muted);
+    --tw-prose-hr: var(--color-border);
+    --tw-prose-quotes: var(--color-text-body);
+    --tw-prose-quote-borders: var(--color-border);
+    --tw-prose-captions: var(--color-text-muted);
+    --tw-prose-code: var(--color-text);
+    --tw-prose-pre-code: var(--color-surface);
+    --tw-prose-pre-bg: var(--color-text);
+    --tw-prose-th-borders: var(--color-border);
+    --tw-prose-td-borders: var(--color-border-subtle);
+  }
+}
+
+/* Prose link overrides - subtle grey underlines like rest of site */
+.prose a {
+  color: var(--color-link);
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-link-underline);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  font-weight: inherit;
+}
+
+.prose a:hover {
+  color: var(--color-link-hover);
+}
+
+/* Print styles */
+@media print {
+  html, body {
+    font-size: 10pt;
+    background: white !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+}

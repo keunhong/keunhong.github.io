@@ -1,0 +1,40 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="py-12 md:py-16 bg-surface">
+  <div class="max-w-4xl mx-auto px-6">
+    <h1 class="font-display text-3xl md:text-4xl font-semibold text-text mb-8">Blog</h1>
+
+    {% if site.posts.size > 0 %}
+    <ul class="space-y-8">
+      {% for post in site.posts %}
+      <li class="border-b border-border pb-8 last:border-b-0">
+        <a href="{{ post.url | relative_url }}" class="block group no-underline">
+          <h2 class="font-display text-2xl font-semibold text-text group-hover:text-text-body transition-colors">
+            {{ post.title }}
+          </h2>
+          <p class="text-text-muted text-sm mt-1">
+            {{ post.date | date: "%B %d, %Y" }}
+            {% if post.tags.size > 0 %}
+            <span class="mx-2">·</span>
+            {% for tag in post.tags %}
+              <span class="text-text-body">{{ tag }}{% unless forloop.last %}, {% endunless %}</span>
+            {% endfor %}
+            {% endif %}
+          </p>
+          {% if post.description %}
+          <p class="text-text-body mt-2">{{ post.description }}</p>
+          {% elsif post.excerpt %}
+          <p class="text-text-body mt-2">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+          {% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="text-text-body">No posts yet. Check back soon!</p>
+    {% endif %}
+  </div>
+</section>

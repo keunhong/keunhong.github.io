@@ -1,0 +1,80 @@
+<div class="flex flex-col md:flex-row gap-6 py-6">
+  <!-- Thumbnail -->
+  <div class="w-full md:w-1/5 flex-shrink-0">
+    <div class="publication-mousecell relative overflow-hidden rounded-lg aspect-square">
+      <img src="{{ '/images/' | append: include.pub.image | relative_url }}"
+           alt="{{ include.pub.title }}"
+           class="w-full h-full object-cover">
+      {% if include.pub.image_mouseover %}
+      <video src="{{ '/images/' | append: include.pub.image_mouseover | relative_url }}"
+             class="absolute inset-0 w-full h-full object-cover hidden"
+             autoplay loop muted playsinline></video>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="flex-1">
+    <h3 class="font-serif text-xl font-semibold">
+      <a href="{{ include.pub.project_page }}" class="text-text hover:text-text-body no-underline">
+        {{ include.pub.title }}
+      </a>
+    </h3>
+
+    <!-- Authors -->
+    <p class="text-text-body text-sm mt-1.5">
+      {% for author_id in include.pub.authors %}
+        {% assign author = site.data.authors[author_id] %}
+        {% if author.is_me %}
+          <span class="font-semibold text-text">{{ author.first_name }}{% if author.middle_name %} {{ author.middle_name }}{% endif %} {{ author.last_name }}</span>{% unless forloop.last %}, {% endunless %}
+        {% elsif author.website %}
+          <a href="{{ author.website }}" class="hover:text-text">{{ author.first_name }}{% if author.middle_name %} {{ author.middle_name }}{% endif %} {{ author.last_name }}</a>{% unless forloop.last %}, {% endunless %}
+        {% else %}
+          <span>{{ author.first_name }}{% if author.middle_name %} {{ author.middle_name }}{% endif %} {{ author.last_name }}</span>{% unless forloop.last %}, {% endunless %}
+        {% endif %}
+      {% endfor %}
+      {% if include.pub.with_collaborators %}
+        <span class="text-text-muted">
+          with collaborators at <a href="{{ include.pub.with_collaborators.url }}" class="hover:text-text">{{ include.pub.with_collaborators.name }}</a>
+        </span>
+      {% endif %}
+    </p>
+
+    <!-- Venue & Awards -->
+    <p class="text-text-muted text-sm mt-1">
+      {{ include.pub.venue }}
+      {% for award in include.pub.awards %}
+        <span class="text-text font-semibold ml-2">{{ award }}</span>
+      {% endfor %}
+    </p>
+
+    <!-- Description -->
+    <p class="text-text-body mt-3">{{ include.pub.description }}</p>
+
+    <!-- Links -->
+    <div class="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-sm">
+      {% if include.pub.project_page %}
+      <a href="{{ include.pub.project_page }}" class="inline-flex items-center text-text-muted hover:text-text no-underline">
+        {% include icons/globe.html class="w-4 h-4 mr-1" %}
+        Project
+      </a>
+      {% endif %}
+      {% if include.pub.arxiv %}
+      <a href="https://arxiv.org/pdf/{{ include.pub.arxiv }}.pdf" class="inline-flex items-center text-text-muted hover:text-text no-underline">
+        {% include icons/document.html class="w-4 h-4 mr-1" %}
+        PDF
+      </a>
+      <a href="https://arxiv.org/abs/{{ include.pub.arxiv }}" class="inline-flex items-center text-text-muted hover:text-text no-underline">
+        <i class="ai ai-arxiv mr-1"></i>
+        arXiv
+      </a>
+      {% endif %}
+      {% if include.pub.github %}
+      <a href="https://github.com/{{ include.pub.github }}" class="inline-flex items-center text-text-muted hover:text-text no-underline">
+        {% include icons/github.html class="w-4 h-4 mr-1" %}
+        Code
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>

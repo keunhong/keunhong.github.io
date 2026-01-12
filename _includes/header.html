@@ -1,0 +1,23 @@
+<header class="py-4 bg-surface">
+  <div class="max-w-4xl mx-auto px-6">
+    <nav class="flex items-center justify-center">
+      <ul class="flex items-center gap-6 text-sm font-sans">
+        <li>
+          <a href="{{ '/' | relative_url }}" class="text-text-muted no-underline hover:text-text {% if page.url == '/' %}text-text font-bold{% endif %}">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/cv/' | relative_url }}" class="text-text-muted no-underline hover:text-text {% if page.url == '/cv/' %}text-text font-bold{% endif %}">
+            CV
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/blog/' | relative_url }}" class="text-text-muted no-underline hover:text-text {% if page.url contains '/blog' or page.layout == 'post' %}text-text font-bold{% endif %}">
+            Blog
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
