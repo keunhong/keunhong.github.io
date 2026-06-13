@@ -1,3 +1,19 @@
+- id: modality-forcing
+  title: "Modality Forcing for Scalable Spatial Generation"
+  venue: "arXiv, 2026"
+  description: "A simple post-training recipe turns a text-to-image diffusion model into a joint image-depth generator whose depth accuracy scales with image pretraining."
+  project_page: "https://modality-forcing.github.io"
+  arxiv: 2606.13676
+  github: Duisterhof/modality-forcing
+  image: modality-forcing-before.png
+  image_mouseover: modality-forcing-after.mp4
+  authors:
+    - bduisterhof
+    - deva
+    - jichnowski
+    - jcjohnson
+    - keunhong
+
 - id: rtfm
   title: "RTFM: Real-Time Frame Model"
   venue: "Blog Post, 2025"

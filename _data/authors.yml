@@ -103,4 +103,21 @@ xiaomingzhao:
   first_name: Xiaoming
   last_name: Zhao
   website: https://xiaoming-zhao.com/
+bduisterhof:
+  first_name: Bardienus
+  middle_name: P.
+  last_name: Duisterhof
+  website: https://bart-ai.com
+deva:
+  first_name: Deva
+  last_name: Ramanan
+  website: https://www.cs.cmu.edu/~deva/
+jichnowski:
+  first_name: Jeffrey
+  last_name: Ichnowski
+  website: https://ichnow.ski
+jcjohnson:
+  first_name: Justin
+  last_name: Johnson
+  website: https://web.eecs.umich.edu/~justincj/
 
