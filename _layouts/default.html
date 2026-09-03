@@ -19,12 +19,30 @@
         el.addEventListener('mouseenter', function() {
           video.classList.remove('hidden');
           img.classList.add('hidden');
+          video.play().catch(function() {});
         });
         el.addEventListener('mouseleave', function() {
+          video.pause();
           video.classList.add('hidden');
           img.classList.remove('hidden');
         });
       }
+    });
+
+    document.querySelectorAll('section.relative video').forEach(function(video) {
+      function keepPlaying() {
+        if (document.visibilityState !== 'visible') return;
+        if (video.paused || video.ended) {
+          video.play().catch(function() {});
+        }
+      }
+      video.addEventListener('pause', keepPlaying);
+      video.addEventListener('ended', keepPlaying);
+      video.addEventListener('stalled', keepPlaying);
+      video.addEventListener('error', function() {
+        video.load();
+        video.play().catch(function() {});
+      });
     });
   </script>
 </body>

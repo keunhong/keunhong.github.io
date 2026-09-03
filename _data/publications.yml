@@ -1,3 +1,17 @@
+- id: atlas
+  title: "Atlas: A World Model for Spatial Intelligence"
+  venue: "World Labs, 2026"
+  description: "A multimodal world model pretrained from scratch to generate, reconstruct, and simulate worlds from text, images, video, and 3D."
+  project_page: "https://www.worldlabs.ai/blog/atlas"
+  image: atlas-before.png
+  image_mouseover: atlas-after.mp4
+  role: "Project Lead"
+  authors:
+    - keunhong
+  with_collaborators:
+    name: "World Labs"
+    url: "https://worldlabs.ai"
+
 - id: modality-forcing
   title: "Modality Forcing for Scalable Spatial Generation"
   venue: "arXiv, 2026"
@@ -16,11 +30,12 @@
 
 - id: rtfm
   title: "RTFM: Real-Time Frame Model"
-  venue: "Blog Post, 2025"
+  venue: "World Labs, 2025"
   description: "A real-time, auto-regressive diffusion model renders persistent 3D worlds on a single GPU."
   project_page: "https://www.worldlabs.ai/blog/rtfm"
   image: rtfm-before.png
   image_mouseover: rtfm-after.mp4
+  role: "Project Lead"
   authors:
     - keunhong
   with_collaborators:

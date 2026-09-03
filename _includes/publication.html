@@ -8,7 +8,7 @@
       {% if include.pub.image_mouseover %}
       <video src="{{ '/images/' | append: include.pub.image_mouseover | relative_url }}"
              class="absolute inset-0 w-full h-full object-cover hidden"
-             autoplay loop muted playsinline></video>
+             preload="none" loop muted playsinline></video>
       {% endif %}
     </div>
   </div>
@@ -43,6 +43,9 @@
     <!-- Venue & Awards -->
     <p class="text-text-muted text-sm mt-1">
       {{ include.pub.venue }}
+      {% if include.pub.role %}
+        <span class="text-text font-semibold ml-2">{{ include.pub.role }}</span>
+      {% endif %}
       {% for award in include.pub.awards %}
         <span class="text-text font-semibold ml-2">{{ award }}</span>
       {% endfor %}

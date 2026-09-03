@@ -1,3 +1,12 @@
+- id: atlas-sep-2026
+  title: "Atlas: A World Model for Spatial Intelligence"
+  organization: "World Labs"
+  date: "September 2026"
+  description: "An omni world model for spatial intelligence."
+  url: "https://www.worldlabs.ai/blog/atlas"
+  image: "atlas-before.png"
+  video: "atlas-after.mp4"
+
 - id: marble-nov-12
   title: "Marble: A Multimodal World Model"
   organization: "World Labs"
@@ -15,15 +24,6 @@
   url: "https://www.worldlabs.ai/blog/rtfm"
   image: "rtfm-before.png"
   video: "rtfm-after.mp4"
-
-- id: world-labs-dec2024
-  title: "Generating Worlds"
-  organization: "World Labs"
-  date: "December 2024"
-  description: "Transform a single image into an explorable 3D world using generative AI."
-  url: "https://www.worldlabs.ai/blog/generating-worlds"
-  image: "world-labs.jpg"
-  video: "worldlabs-dec2.mp4"
 
 - id: google-3d-shopping-may2025
   title: "Generating 3D Products"

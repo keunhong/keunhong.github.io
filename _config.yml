@@ -23,9 +23,8 @@ name: Keunhong Park
 position: Research Scientist
 email: gsmv8rlm8@mozmail.com
 description: |
-  I am a founding member at [World Labs](https://www.worldlabs.ai/blog) where I lead model pretraining. 
+  I am a founding member at [World Labs](https://www.worldlabs.ai/blog) where I lead the pre-training team. I recently led the development of [Atlas](https://www.worldlabs.ai/blog/atlas), a multi-modal world model. 
   My research focuses on world models—from large-scale pretraining to real-time generation---combining diffusion models with 3D scene representations. 
-  See our recent [Marble](https://www.worldlabs.ai/blog/marble-world-model) and [RTFM](https://www.worldlabs.ai/blog/rtfm) releases.
 
   Previously I was a research scientist at [Google](https://ai.google/research/) where 
   I built technology to [generate 3D assets](https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/) 

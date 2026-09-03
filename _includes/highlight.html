@@ -2,7 +2,7 @@
   <a href="{{ include.h.url }}" target="_blank" rel="noopener" class="block no-underline">
     <div class="aspect-square overflow-hidden">
       {% if include.h.video %}
-      <video autoplay loop muted playsinline class="w-full h-full object-cover">
+      <video autoplay loop muted playsinline preload="auto" class="w-full h-full object-cover">
         <source src="{{ '/images/' | append: include.h.video | relative_url }}" type="video/mp4">
         <img src="{{ '/images/' | append: include.h.image | relative_url }}" alt="{{ include.h.title }}" class="w-full h-full object-cover">
       </video>
