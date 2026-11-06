@@ -1,4 +1,18 @@
+- id: frameboy
+  title: "Frameboy: Atlas in Real-time"
+  venue: "World Labs, 2026"
+  description: 'The successor to <a href="https://www.worldlabs.ai/blog/rtfm">RTFM</a>, an optimized version of Atlas that runs real-time at up to 15fps'
+  project_page: "https://www.worldlabs.ai/blog/atlas-realtime"
+  image: frameboy-before.png
+  image_mouseover: frameboy-after.mp4
+  authors:
+    - keunhong
+  with_collaborators:
+    name: "World Labs"
+    url: "https://worldlabs.ai"
+
 - id: atlas
+  representative: true
   title: "Atlas: A World Model for Spatial Intelligence"
   venue: "World Labs, 2026"
   description: "A multimodal world model pretrained from scratch to generate, reconstruct, and simulate worlds from text, images, video, and 3D."
@@ -29,6 +43,7 @@
     - keunhong
 
 - id: rtfm
+  representative: true
   title: "RTFM: Real-Time Frame Model"
   venue: "World Labs, 2025"
   description: "A real-time, auto-regressive diffusion model renders persistent 3D worlds on a single GPU."
@@ -58,6 +73,7 @@
     - rmbrualla
     - phenzler
 - id: reconfusion
+  representative: true
   title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
   venue: CVPR, 2024
   description: "Using an multi-view image conditioned diffusion model to regularize a NeRF enabled few-view reconstruction."
@@ -129,6 +145,7 @@
     - mtbr
 
 - id: nerfies
+  representative: true
   title: "Nerfies: Deformable Neural Radiance Fields"
   venue: ICCV, 2021
   description: "Learning deformation fields with a NeRF let's you reconstruct non-rigid scenes with high fidelity."

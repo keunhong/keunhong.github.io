@@ -1,3 +1,12 @@
+- id: frameboy-nov-2026
+  title: "Frameboy: Atlas in Real-time"
+  organization: "World Labs"
+  date: "November 2026"
+  description: 'The successor to <a href="https://www.worldlabs.ai/blog/rtfm">RTFM</a>, an optimized version of Atlas that runs real-time at up to 15fps'
+  url: "https://www.worldlabs.ai/blog/atlas-realtime"
+  image: "frameboy-before.png"
+  video: "frameboy-after.mp4"
+
 - id: atlas-sep-2026
   title: "Atlas: A World Model for Spatial Intelligence"
   organization: "World Labs"
@@ -6,15 +15,6 @@
   url: "https://www.worldlabs.ai/blog/atlas"
   image: "atlas-before.png"
   video: "atlas-after.mp4"
-
-- id: marble-nov-12
-  title: "Marble: A Multimodal World Model"
-  organization: "World Labs"
-  date: "November 2025"
-  description: "A frontier multimodal world model."
-  url: "https://www.worldlabs.ai/blog/marble-world-model"
-  image: "marble-before.png"
-  video: "marble-after.mp4"
 
 - id: rtfm-oct-16
   title: "Real-Time Frame Model"

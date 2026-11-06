@@ -1,4 +1,4 @@
-<div class="flex flex-col md:flex-row gap-6 py-6">
+<div class="publication{% if include.pub.representative == true %} publication--representative{% endif %} flex flex-col md:flex-row gap-6 py-6">
   <!-- Thumbnail -->
   <div class="w-full md:w-1/5 flex-shrink-0">
     <div class="publication-mousecell relative overflow-hidden rounded-lg aspect-square">
@@ -16,6 +16,7 @@
   <!-- Content -->
   <div class="flex-1">
     <h3 class="font-serif text-xl font-semibold">
+      {% if include.pub.representative == true %}<span class="sr-only">Representative work: </span>{% endif %}
       <a href="{{ include.pub.project_page }}" class="text-text hover:text-text-body no-underline">
         {{ include.pub.title }}
       </a>

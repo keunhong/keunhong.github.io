@@ -6,6 +6,7 @@
   --color-surface: #ffffff;
   --color-surface-alt: #fcfcfc;
   --color-surface-muted: rgb(250, 249, 245);
+  --color-surface-representative: #fff9e8;
 
   /* Text colors */
   --color-text: #171717;
@@ -80,6 +81,14 @@
     --tw-prose-th-borders: var(--color-border);
     --tw-prose-td-borders: var(--color-border-subtle);
   }
+}
+
+/* Extend the highlight into the gutter to keep all publication content aligned. */
+.publication--representative {
+  background-color: var(--color-surface-representative);
+  border-radius: 0.5rem;
+  margin-inline: -1rem;
+  padding-inline: 1rem;
 }
 
 /* Prose link overrides - subtle grey underlines like rest of site */
